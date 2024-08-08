@@ -13,6 +13,19 @@
 
 @font-face {
     font-family: 'Unbounded';
+    src: url('../fonts/Unbounded-SemiBold.eot');
+    src: local('Unbounded SemiBold'), local('Unbounded-SemiBold'),
+    url('../fonts/Unbounded-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Unbounded-SemiBold.woff2') format('woff2'),
+    url('../fonts/Unbounded-SemiBold.woff') format('woff'),
+    url('../fonts/Unbounded-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Unbounded';
     src: url('../fonts/Unbounded-Bold.eot');
     src: local('Unbounded Bold'), local('Unbounded-Bold'),
     url('../fonts/Unbounded-Bold.eot?#iefix') format('embedded-opentype'),
