@@ -30,9 +30,13 @@
                 />
             </picture>
             <h1 class="main__title">Какое дело – твоё?</h1>
-            <p class="main__content">Работа — не просто источник дохода. Она помогает получить ценный опыт и уверенность в себе, быть независимым и реализованным. А еще — это крутая возможность накопить на свою мечту, долгожданный отпуск и даже — на собственную квартиру.</p>
-            <p class="main__content">Ищешь работу, которая будет интересной и подойдет твоему образу жизни? Хочешь узнать, какое дело подойдет именно тебе? Пройди тест — всего три вопроса помогут определиться, в какой сфере развиваться, и не потеряться в огромном выборе карьерных маршрутов.</p>
-            <button class="main__button js-next-button">Начнём!</button>
+            <p class="main__content">Работа — не просто источник дохода. Она помогает получить ценный опыт и уверенность
+                в себе, быть независимым и реализованным. А еще — это крутая возможность накопить на свою мечту,
+                долгожданный отпуск и даже — на собственную квартиру.</p>
+            <p class="main__content">Ищешь работу, которая будет интересной и подойдет твоему образу жизни? Хочешь
+                узнать, какое дело подойдет именно тебе? Пройди тест — всего три вопроса помогут определиться, в какой
+                сфере развиваться, и не потеряться в огромном выборе карьерных маршрутов.</p>
+            <button class="main__button js-next-button" data-go-to="type">Начнём!</button>
         </div>
     </div>
     <div class="game__section type big">
@@ -60,14 +64,19 @@
                     <p class="game-flex__head-text">Выбери свою<br/>атмосферу</p>
                 </div>
                 <div class="game-flex__footer">
-                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img src="./images/home_icon.svg" alt="" width="24"></a>
-                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/" target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
-                    <button class="game-flex__footer-button js-next-button" disabled>Выбрать атмосферу</button>
+                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
+                            src="./images/home_icon.svg" alt="" width="24"></a>
+                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
+                       target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
+                    <button class="game-flex__footer-button js-next-button js-type-button" disabled data-go-to="">
+                        Выбрать атмосферу
+                    </button>
                 </div>
             </div>
             <div class="game-flex__item game-flex__list">
                 <div class="game-flex__list-item">
-                    <input type="radio" name="type" class="js-type" value="На производстве" class="js-type">
+                    <input type="radio" name="type" class="js-type" value="question_1[data-type='На производстве']"
+                           class="js-type">
                     <p class="game-flex__counter">1</p>
                     <div class="game-flex__list-head">
                         <picture>
@@ -84,11 +93,12 @@
                     </div>
                     <div class="game-flex__list-footer">
                         <p class="game-flex__list-title">На производстве</p>
-                        <p class="game-flex__list-content">Знаю, как работать с&nbsp;инструментами, и хочу освоить вон тот шлифовальный станок.</p>
+                        <p class="game-flex__list-content">Знаю, как работать с&nbsp;инструментами, и хочу освоить вон
+                            тот шлифовальный станок.</p>
                     </div>
                 </div>
                 <div class="game-flex__list-item">
-                    <input type="radio" name="type" class="js-type" value="В пути">
+                    <input type="radio" name="type" class="js-type" value="question_1[data-type='В пути']">
                     <p class="game-flex__counter">2</p>
                     <div class="game-flex__list-head">
                         <picture>
@@ -105,11 +115,12 @@
                     </div>
                     <div class="game-flex__list-footer">
                         <p class="game-flex__list-title">В пути</p>
-                        <p class="game-flex__list-content">Хочу быть в движении,<br/>встречать закаты и любоваться проносящимися мимо пейзажами.</p>
+                        <p class="game-flex__list-content">Хочу быть в движении,<br/>встречать закаты и любоваться
+                            проносящимися мимо пейзажами.</p>
                     </div>
                 </div>
                 <div class="game-flex__list-item">
-                    <input type="radio" name="type" class="js-type" value="Гибрид">
+                    <input type="radio" name="type" class="js-type" value="question_1[data-type='Гибрид']">
                     <p class="game-flex__counter">3</p>
                     <div class="game-flex__list-head">
                         <picture>
@@ -126,11 +137,12 @@
                     </div>
                     <div class="game-flex__list-footer">
                         <p class="game-flex__list-title">Гибрид</p>
-                        <p class="game-flex__list-content">Иногда душа просит удаленку. А ещё у&nbsp;меня есть любимая пижама.</p>
+                        <p class="game-flex__list-content">Иногда душа просит удаленку. А ещё у&nbsp;меня есть любимая
+                            пижама.</p>
                     </div>
                 </div>
                 <div class="game-flex__list-item">
-                    <input type="radio" name="type" class="js-type" value="Свежий воздух">
+                    <input type="radio" name="type" class="js-type" value="question_1[data-type='Свежий воздух']">
                     <p class="game-flex__counter">4</p>
                     <div class="game-flex__list-head">
                         <picture>
@@ -147,11 +159,12 @@
                     </div>
                     <div class="game-flex__list-footer">
                         <p class="game-flex__list-title">Свежий<br/>воздух</p>
-                        <p class="game-flex__list-content">Люблю солнце и&nbsp;пение птиц. Душный кабинет — не по мне!</p>
+                        <p class="game-flex__list-content">Люблю солнце и&nbsp;пение птиц. Душный кабинет — не по
+                            мне!</p>
                     </div>
                 </div>
                 <div class="game-flex__list-item">
-                    <input type="radio" name="type" class="js-type" value="Офис">
+                    <input type="radio" name="type" class="js-type" value="question_1[data-type='Офис']">
                     <p class="game-flex__counter">5</p>
                     <div class="game-flex__list-head">
                         <picture>
@@ -174,7 +187,7 @@
             </div>
         </div>
     </div>
-    <div class="game__section question" data-type="Офис">
+    <div class="game__section question_1" data-type="Офис">
         <div class="container game-flex">
             <div class="game-flex__item game-flex__text-content">
                 <div class="game-flex__head">
@@ -199,10 +212,14 @@
                     <p class="game-flex__head-type game-flex__head-type_1">Офис</p>
                 </div>
                 <div class="game-flex__footer">
-                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img src="./images/home_icon.svg" alt="" width="24"></a>
-                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/" target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
-                    <button class="game-flex__footer-button js-next-button" disabled>Выбрать силы</button>
-                    
+                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
+                            src="./images/home_icon.svg" alt="" width="24"></a>
+                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
+                       target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
+                    <button class="game-flex__footer-button js-next-button" disabled
+                            data-go-to="question_2[data-type='Офис']">Выбрать силы
+                    </button>
+
                 </div>
             </div>
             <div class="game-flex__item game-flex__list">
@@ -324,7 +341,8 @@
                     <div class="game-flex__list-footer">
                         <input type="checkbox" name="choose-1" class="js-choose" value="6">
                         <p class="game-flex__counter">6</p>
-                        <p class="game-flex__list-content">Могу договориться о&nbsp;чём угодно и&nbsp;с&nbsp;кем угодно</p>
+                        <p class="game-flex__list-content">Могу договориться о&nbsp;чём угодно и&nbsp;с&nbsp;кем
+                            угодно</p>
                     </div>
                 </div>
                 <div class="game-flex__list-item">
@@ -359,7 +377,7 @@
                                     srcset="./images/powers-list-1-8.png 1x, ./images/powers-list-1-8@2x.png 2x"
                                     alt=""
                                     width="240"
-                                    
+
                             />
                         </picture>
                     </div>
@@ -372,11 +390,212 @@
             </div>
         </div>
     </div>
-    <div class="game__section result">
+    <div class="game__section question_2" data-type="Офис">
+        <div class="container game-flex">
+            <div class="game-flex__item game-flex__text-content">
+                <div class="game-flex__head">
+                    <picture>
+                        <source
+                                srcset="./images/powers-1.png 1x, ./images/powers-1@2x.png 2x"
+                        />
+                        <img
+                                src="./images/powers-1.png"
+                                srcset="./images/powers-1.png 1x, ./images/powers-1@2x.png 2x"
+                                alt=""
+                                class="game-flex__text-absolute-bg"
+                        />
+                    </picture>
+                    <img
+                            src="./images/rjd-decor_black.svg"
+                            alt="Декоративная картинка"
+                            width="185"
+                            class="game-flex__head-decor"
+                    />
+                    <p class="game-flex__head-text">Выбери свои<br/>суперсилы</p>
+                    <p class="game-flex__head-type game-flex__head-type_1">Офис</p>
+                </div>
+                <div class="game-flex__footer">
+                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
+                            src="./images/home_icon.svg" alt="" width="24"></a>
+                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
+                       target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
+                    <button class="game-flex__footer-button js-next-button" disabled
+                            data-go-to="result[data-type='Офис']">Выбрать силы
+                    </button>
+
+                </div>
+            </div>
+            <div class="game-flex__item game-flex__list">
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-1-1.png 1x, ./images/powers-list-1-1@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-1-1.png"
+                                    srcset="./images/powers-list-1-1.png 1x, ./images/powers-list-1-1@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-1" class="js-choose" value="1">
+                        <p class="game-flex__counter">1</p>
+                        <p class="game-flex__list-content">Многозадачный</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-1-2.png 1x, ./images/powers-list-1-2@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-1-2.png"
+                                    srcset="./images/powers-list-1-2.png 1x, ./images/powers-list-1-2@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-1" class="js-choose" value="2">
+                        <p class="game-flex__counter">2</p>
+                        <p class="game-flex__list-content">Управляю хаосом</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-1-3.png 1x, ./images/powers-list-1-3@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-1-3.png"
+                                    srcset="./images/powers-list-1-3.png 1x, ./images/powers-list-1-3@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-1" class="js-choose" value="3">
+                        <p class="game-flex__counter">3</p>
+                        <p class="game-flex__list-content">Довожу начатое до конца</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-1-4.png 1x, ./images/powers-list-1-4@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-1-4.png"
+                                    srcset="./images/powers-list-1-4.png 1x, ./images/powers-list-1-4@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-1" class="js-choose" value="4">
+                        <p class="game-flex__counter">4</p>
+                        <p class="game-flex__list-content">Вы вообще видели мою силу духа?</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-1-5.png 1x, ./images/powers-list-1-5@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-1-5.png"
+                                    srcset="./images/powers-list-1-5.png 1x, ./images/powers-list-1-5@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-1" class="js-choose" value="5">
+                        <p class="game-flex__counter">5</p>
+                        <p class="game-flex__list-content">Не боюсь ответственности</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-1-6.png 1x, ./images/powers-list-1-6@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-1-6.png"
+                                    srcset="./images/powers-list-1-6.png 1x, ./images/powers-list-1-6@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-1" class="js-choose" value="6">
+                        <p class="game-flex__counter">6</p>
+                        <p class="game-flex__list-content">Могу договориться о&nbsp;чём угодно и&nbsp;с&nbsp;кем
+                            угодно</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-1-7.png 1x, ./images/powers-list-1-7@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-1-7.png"
+                                    srcset="./images/powers-list-1-7.png 1x, ./images/powers-list-1-7@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-1" class="js-choose" value="7">
+                        <p class="game-flex__counter">7</p>
+                        <p class="game-flex__list-content">Я с&nbsp;таблицами на&nbsp;«ты»</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-1-8.png 1x, ./images/powers-list-1-8@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-1-8.png"
+                                    srcset="./images/powers-list-1-8.png 1x, ./images/powers-list-1-8@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-1" class="js-choose" value="8">
+                        <p class="game-flex__counter">8</p>
+                        <p class="game-flex__list-content">От меня не&nbsp;ускользнёт ни&nbsp;одна деталь</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section result" data-type="Офис">
         <div class="container">
-            <div class="result__item result-1">
-                <div class="result__item-wrapper">
-                <p class="result__title">Результат</p>
+            <div class="result__wrapper">
                 <div class="result__content">
                     <picture>
                         <source
@@ -385,189 +604,28 @@
                         <img
                                 src="./images/result-1.png"
                                 alt=""
-                                width="475"
-                                height="432"
+                                width="664"
                         />
                     </picture>
                     <div class="result__content-text">
-                        <div class="result__content-text-wrapper">
-                            <h2>Вы — Гурман!</h2>
-                            <p>Вы — гуру гастрономического туризма, знаток всех мишленовских ресторанов и забегаловок для местных. Travel.rzd предлагает поехать в гастротур — это комплекс мероприятий по дегустации блюд и напитков, знакомство с кухнями разных народов.</p>
-                            <p>Для себя <b>вы можете выбрать</b> сельские гастротуры, ориентированные на экологически чистую продукцию и предполагающие дегустацию вин и блюд местного производства. Или же городские гастротуры, где вы сможете посетить известные рестораны и кафе.</p>
+                        <div class="result__content-text-item">
+                            <p class="result__content-text-subtitle">Если в самом начале выбрал офис:</p>
+                            <h2>Тебе будут по душе эти&nbsp;профессии</h2>
+                            <ul class="result__content-text-list">
+                                <li class="result__content-text-list-item">маркетолог</li>
+                                <li class="result__content-text-list-item">социолог</li>
+                                <li class="result__content-text-list-item">дизайнер</li>
+                                <li class="result__content-text-list-item">аналитик</li>
+                                <li class="result__content-text-list-item">юрист по интеллектуальной собственности</li>
+                            </ul>
+                            <p class="result__content-text-content">Кстати, в ржд есть больше 1000 самых разных профессий и специальностей!<br/>Выбрать подходящую вакансию можно на&nbsp;карьерном портале team.Rzd.Ru</p>
+                        </div>
+                        <div class="result__content-text-item">
+                            <p class="result__socials-text">Хочешь узнать больше о&nbsp;работе в компании? Подписывайся на наше карьерное сообщество vk:</p>
+                            <a href="https://vk.com/komandarzd" class="result__socials-link">VK.COM/KOMANDARZD</a>
                         </div>
                     </div>
                 </div>
-                <div class="result__footer">
-                    <div class="result__footer-wrapper">
-                        <a class="game-flex__footer-link game-flex__footer-link_result-1 result__icon js-remove-inaction js-home-icon" href="#"><img class="js-remove-inaction" src="./images/home_icon.svg" alt="" width="24"></a>
-                        <a class="game-flex__footer-link game-flex__footer-link_result-2 result__icon js-remove-inaction" href="https://travel.rzd.ru/" target="_blank"><img class="js-remove-inaction" src="./images/result-location-icon.svg" alt="" width="40"></a>
-                        <a class="result__button js-remove-inaction" href="https://travel.rzd.ru/excursions/compilation/gurman" target="_blank">Посмотреть мое идеальное путешествие</a>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="result__item result-2">
-                <div class="result__item-wrapper">
-                <p class="result__title">Результат</p>
-                <div class="result__content">
-                    <picture>
-                        <source
-                                srcset="./images/result-2.png 1x, ./images/result-2@2x.png 2x"
-                        />
-                        <img
-                                src="./images/result-2.png"
-                                srcset="./images/result-2.png 1x, ./images/result-2@2x.png 2x"
-                                alt=""
-                                width="475"
-                                height="432"
-                        />
-                    </picture>
-                    <div class="result__content-text">
-                        <div class="result__content-text-wrapper">
-                            <h2>Вы — Исследователь!</h2>
-                            <p>Для вас главное в отпуске — это знания, которые вы привезете из путешествия и сможете поделиться с близкими. Музеи, городские улочки и исторические памятники — вот он, идеальный отпуск для вас, а Travel. RZD обязательно вам <b>поможет определиться с местом.</b></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="result__footer">
-                    <div class="result__footer-wrapper">
-                        <a class="game-flex__footer-link game-flex__footer-link_result-1 result__icon js-home-icon js-remove-inaction" href="#"><img class="js-remove-inaction" src="./images/home_icon.svg" alt="" width="24"></a>
-                        <a class="game-flex__footer-link game-flex__footer-link_result-2 result__icon js-remove-inaction" href="https://travel.rzd.ru/" target="_blank"><img class="js-remove-inaction" src="./images/result-location-icon.svg" alt="" width="40"></a>
-                        <a class="result__button js-remove-inaction" href="https://travel.rzd.ru/excursions/compilation/issledovatel" target="_blank">Посмотреть мое идеальное путешествие</a>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="result__item result-3">
-                <div class="result__item-wrapper">
-                <p class="result__title">Результат</p>
-                <div class="result__content">
-                    <picture>
-                        <source
-                                srcset="./images/result-3.png 1x, ./images/result-3@2x.png 2x"
-                        />
-                        <img
-                                src="./images/result-3.png"
-                                srcset="./images/result-3.png 1x, ./images/result-3@2x.png 2x"
-                                alt=""
-                                width="475"
-                                height="432"
-                        />
-                    </picture>
-                    <div class="result__content-text">
-                        <div class="result__content-text-wrapper">
-                            <h2>Вы – Пляжный тюлень!</h2>
-                            <p>Бирюзовые волны и теплый песок … представьте, как вы млеете на солнце, читая ненавязчивую книжку, или плаваете в ласковом море.</p>
-                            <p><b>Отправляйтесь</b> на южное побережье, совершите променад, вдыхая мягкий морской воздух среди хвойных деревьев, посетите уходовые спа-процедуры или просто наслаждайтесь отдыхом, созерцая горные пейзажи. Travel.rzd поможет вам определиться.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="result__footer">
-                    <div class="result__footer-wrapper">
-                        <a class="game-flex__footer-link game-flex__footer-link_result-1 result__icon js-home-icon js-remove-inaction" href="#"><img class="js-remove-inaction" src="./images/home_icon.svg" alt="" width="24"></a>
-                        <a class="game-flex__footer-link game-flex__footer-link_result-2 result__icon js-remove-inaction" href="https://travel.rzd.ru/" target="_blank"><img class="js-remove-inaction" src="./images/result-location-icon.svg" alt="" width="40"></a>
-                        <a class="result__button js-remove-inaction" href="https://travel.rzd.ru/hotels/compilation/plyazhnyy-tyulen" target="_blank">Посмотреть мое идеальное путешествие</a>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="result__item result-4">
-                <div class="result__item-wrapper">
-                <p class="result__title">Результат</p>
-                <div class="result__content">
-                    <picture>
-                        <source
-                                srcset="./images/result-4.png 1x, ./images/result-4@2x.png 2x"
-                        />
-                        <img
-                                src="./images/result-4.png"
-                                srcset="./images/result-4.png 1x, ./images/result-4@2x.png 2x"
-                                alt=""
-                                width="475"
-                                height="432"
-                        />
-                    </picture>
-                    <div class="result__content-text">
-                        <div class="result__content-text-wrapper">
-                            <h2>Вы — Покоритель гор!</h2>
-                            <p>Лучше гор могут быть только горы, на которых еще не бывал! Любому пляжу, многолюдным музеям и историческим площадям вы предпочтете горы. Ведь вы знаете: наградой за восхождение станут удивительные ландшафты, пьянящий горный воздух и умиротворяющее единение с природой.</p>
-                            <p><b>Что вы выберете:</b> романтическую экскурсию «Замки Кабардино-Балкарии», а, может быть, вас манит таинственный и заброшенный аул в Гунибском районе Дагестана, руины которого возвышаются среди облаков на высоте около 1500 метров над уровнем моря? Travel.rzd всегда рядом.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="result__footer">
-                    <div class="result__footer-wrapper">
-                        <a class="game-flex__footer-link game-flex__footer-link_result-1 result__icon js-home-icon js-remove-inaction" href="#"><img class="js-remove-inaction" src="./images/home_icon.svg" alt="" width="24"></a>
-                        <a class="game-flex__footer-link game-flex__footer-link_result-2 result__icon js-remove-inaction" href="https://travel.rzd.ru/" target="_blank"><img class="js-remove-inaction" src="./images/result-location-icon.svg" alt="" width="40"></a>
-                        <a class="result__button js-remove-inaction" href="https://travel.rzd.ru/excursions/compilation/pokoritel-gor" target="_blank">Посмотреть мое идеальное путешествие</a>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="result__item result-5">
-                <div class="result__item-wrapper">
-                <p class="result__title">Результат</p>
-                <div class="result__content">
-                    <picture>
-                        <source
-                                srcset="./images/result-5.png 1x, ./images/result-5@2x.png 2x"
-                        />
-                        <img
-                                src="./images/result-5.png"
-                                srcset="./images/result-5.png 1x, ./images/result-5@2x.png 2x"
-                                alt=""
-                                width="475"
-                                height="432"
-                        />
-                    </picture>
-                    <div class="result__content-text">
-                        <div class="result__content-text-wrapper">
-                            <h2>Вы — Экстремал!</h2>
-                            <p>Для вас главное в отдыхе — возможность получить острые ощущения. За яркими и захватывающими приключениями вы готовы <b>отправиться</b> хоть на край света. Рафтинг, параплан, полет на воздушном шаре, горные лыжи, сноуборд, скалолазание, катание на квадроциклах, виндсерфинг, дайвинг, парусный спорт, катание на гидропланах и аквабайках – вот далеко не полный перечень активных видов отдыха для вас.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="result__footer">
-                    <div class="result__footer-wrapper">
-                        <a class="game-flex__footer-link game-flex__footer-link_result-1 result__icon js-home-icon js-remove-inaction" href="#"><img class="js-remove-inaction" src="./images/home_icon.svg" alt="" width="24"></a>
-                        <a class="game-flex__footer-link game-flex__footer-link_result-2 result__icon js-remove-inaction" href="https://travel.rzd.ru/" target="_blank"><img class="js-remove-inaction" src="./images/result-location-icon.svg" alt="" width="40"></a>
-                        <a class="result__button js-remove-inaction" href="https://travel.rzd.ru/excursions/compilation/ekstremal" target="_blank">Посмотреть мое идеальное путешествие</a>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <div class="result__item result-6">
-                <div class="result__item-wrapper">
-                <p class="result__title">Результат</p>
-                <div class="result__content">
-                    <picture>
-                        <source
-                                srcset="./images/result-6.png 1x, ./images/result-6@2x.png 2x"
-                        />
-                        <img
-                                src="./images/result-6.png"
-                                srcset="./images/result-6.png 1x, ./images/result-6@2x.png 2x"
-                                alt=""
-                                width="475"
-                                height="432"
-                        />
-                    </picture>
-                    <div class="result__content-text">
-                        <div class="result__content-text-wrapper">
-                            <h2>Вы — Гуру селфи!</h2>
-                            <p>При выборе путешествия главный критерий для вас — локация. Она должна быть необычная, с интересными элементами архитектуры, чтобы точно привезти снимки не как у всех.</p>
-                            <p><b>Travel.rzd предлагает</b> вам обратить внимание на экскурсии, на которых вы сможете испытать незабываемые эмоции, а главное — запечатлеть их и сохранить воспоминания на всю жизнь.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="result__footer">
-                    <div class="result__footer-wrapper">
-                        <a class="game-flex__footer-link game-flex__footer-link_result-1 result__icon js-home-icon js-remove-inaction" href="#"><img class="js-remove-inaction" src="./images/home_icon.svg" alt="" width="24"></a>
-                        <a class="game-flex__footer-link game-flex__footer-link_result-2 result__icon js-remove-inaction" href="https://travel.rzd.ru/" target="_blank"><img class="js-remove-inaction" src="./images/result-location-icon.svg" alt="" width="40"></a>
-                        <a class="result__button js-remove-inaction" href="https://travel.rzd.ru/excursions/compilation/guru-selfi" target="_blank">Посмотреть мое идеальное путешествие</a>
-                    </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>

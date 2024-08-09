@@ -1,24 +1,25 @@
 const mainBlock = document.querySelector('.game'),
+    typeButton = mainBlock.querySelector('.js-type-button'),
     nextButtons = mainBlock.querySelectorAll('.js-next-button'),
     homeButtons = mainBlock.querySelectorAll('.js-home-icon'),
     typeBlocks = mainBlock.querySelectorAll('.js-type');
+
 let currentBlock = 'main',
-    nextBlock = 'type',
-    type = '';
+    nextBlock = '';
+
 window.addEventListener('DOMContentLoaded', function () {
 
     gsap.to(".main", {opacity: 1, duration: 1, zIndex: 10})
 
     for (let typeBlock of typeBlocks) {
         typeBlock.addEventListener('click', () => {
-            if (typeBlock.value !== type) {
-                type = typeBlock.value;
-            }
+            typeButton.setAttribute('data-go-to', typeBlock.value);
         })
     }
 
     for (let nextButton of nextButtons) {
         nextButton.addEventListener('click', () => {
+            nextBlock = nextButton.getAttribute('data-go-to');
             gsap.to(`.${currentBlock}`, {left: '-50%', opacity: 0, duration: 1, zIndex: 0});
             gsap.fromTo(`.${nextBlock}`, {left: '150%', opacity: 0}, {
                 left: '50%',
@@ -26,13 +27,10 @@ window.addEventListener('DOMContentLoaded', function () {
                 duration: 1,
                 zIndex: 10
             });
-            setTimeout(() => gsap.to(`.${currentBlock}`, {left: '50%'}), 1500)
+            const hiddenBlock = currentBlock
+            setTimeout(() => gsap.to(`.${hiddenBlock}`, {left: '50%'}), 1500)
             currentBlock = nextBlock;
-            if (currentBlock === 'type') {
-                nextBlock = mainBlock.querySelector(`.question[data-type="${type}"]`)
-            }
-            console.log(nextBlock)
-            validate(currentBlock);
+            validate(nextBlock);
         })
     }
 
@@ -52,46 +50,15 @@ window.addEventListener('DOMContentLoaded', function () {
 
     for (let homeButton of homeButtons) {
         homeButton.addEventListener('click', () => {
-            gsap.to(".result", {opacity: 0, duration: 1, zIndex: 0})
-            if (chooseNumber) {
-                gsap.to(`.result-${chooseNumber}`, {opacity: 0, duration: 1, zIndex: 0})
-            }
+            gsap.to(`.${currentBlock}`, {opacity: 0, duration: 1, zIndex: 0})
+            gsap.to(".main", {left: '50%', opacity: 1, duration: 1, zIndex: 10})
             const inputs = mainBlock.querySelectorAll('input:checked');
             for (let inputsItem of inputs) {
                 inputsItem.checked = false;
             }
-            gsap.to(`.${currentBlock}`, {opacity: 0, duration: 1, zIndex: 0})
+            currentBlock = 'main',
+                nextBlock = '';
             gsap.to('.game-flex__footer-button', {disabled: true})
-            gsap.to('.game__section', {left: '50%'})
-            gsap.to(".main", {opacity: 1, duration: 1, zIndex: 10})
-            chooseNumber = 0;
         })
     }
-
-    fourthButton.addEventListener('click', () => {
-        gsap.to(".fourth", {left: '-50%', opacity: 0, duration: 1, zIndex: 0});
-        gsap.fromTo(".result", {left: '150%', opacity: 0}, {left: '50%', opacity: 1, duration: 1, zIndex: 10});
-        gsap.to(`.result-${chooseNumber}`, {opacity: 1, duration: 1, zIndex: 5})
-        let inActionTime = setTimeout(() => {
-            gsap.to(".result", {opacity: 0, duration: 1, zIndex: 0})
-            gsap.to(`.result-${chooseNumber}`, {opacity: 0, duration: 1, zIndex: 0})
-            chooseNumber = 0;
-            const inputs = mainBlock.querySelectorAll('input:checked');
-            for (let inputsItem of inputs) {
-                inputsItem.checked = false;
-            }
-            gsap.to(".main", {opacity: 1, duration: 1, zIndex: 10})
-            gsap.to('.game-flex__footer-button', {disabled: true})
-            gsap.to('.game__section', {left: '50%'})
-        }, 50000);
-        mainBlock.addEventListener('click', function checkFinish(e) {
-            if (e.target.classList.contains('js-remove-inaction')) {
-                clearTimeout(inActionTime)
-                this.removeEventListener('click', checkFinish)
-                gsap.to('.game-flex__footer-button', {disabled: true})
-                gsap.to('.game__section', {left: '50%'})
-            }
-            setTimeout(() => this.removeEventListener('click', checkFinish), 50000)
-        })
-    })
 });

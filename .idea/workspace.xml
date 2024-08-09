@@ -2,94 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11ba4a21-3aab-4c66-a62c-27a6b5604966" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/normalize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/big-img-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/big-img-1@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/big-img-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/big-img-2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/big-img-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/big-img-3@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/big-img-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/big-img-4@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/camera_icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-four-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-four-1@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-four-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-four-2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-four-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-four-3@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-four-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-four-4@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-four-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-four-5@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-10@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-11@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-12@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-1@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-3@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-4@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-5@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-6@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-7@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-8.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-8@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-9.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-one-9@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-three-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-three-1@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-three-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-three-2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-three-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-three-3@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-three-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-three-4@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-three-icon-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-three-icon-2.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-three-icon-3.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-three-icon-4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-two-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-two-1@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-two-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-two-2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-two-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-two-3@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-two-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-two-4@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-two-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-two-5@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-two-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/choose-two-6@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/home_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/home_icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/location_icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/images/location_icon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/main-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/main-img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/main-img@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/main-img@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-1@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-2@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-3@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-4@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-5@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-6@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/result-location-icon.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +30,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Work/iceberry",
+    "last_opened_file_path": "D:/Work/base-emails",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -132,7 +49,8 @@
       <option name="presentableId" value="Default" />
       <updated>1723041414720</updated>
       <workItem from="1723041415883" duration="4155000" />
-      <workItem from="1723103631681" duration="20716000" />
+      <workItem from="1723103631681" duration="20766000" />
+      <workItem from="1723191686037" duration="11987000" />
     </task>
     <servers />
   </component>
