@@ -12,12 +12,6 @@
 <section class="game">
     <div class="game__section main">
         <div class="container main__container">
-            <img
-                    src="./images/rjd-decor.svg"
-                    alt="Декоративная картинка"
-                    width="231"
-                    class="main__decor"
-            />
             <picture>
                 <source
                         srcset="./images/main-img.png 1x, ./images/main-img@2x.png 2x"
@@ -31,11 +25,11 @@
             </picture>
             <h1 class="main__title">Какое дело – твоё?</h1>
             <p class="main__content">Работа — не просто источник дохода. Она помогает получить ценный опыт и уверенность
-                в себе, быть независимым и реализованным. А еще — это крутая возможность накопить на свою мечту,
-                долгожданный отпуск и даже — на собственную квартиру.</p>
-            <p class="main__content">Ищешь работу, которая будет интересной и подойдет твоему образу жизни? Хочешь
-                узнать, какое дело подойдет именно тебе? Пройди тест — всего три вопроса помогут определиться, в какой
-                сфере развиваться, и не потеряться в огромном выборе карьерных маршрутов.</p>
+                в себе, быть независимым и реализованным. А ещё — это крутая возможность накопить на свою мечту,
+                долгожданный отпуск и даже — на собственную квартиру</p>
+            <p class="main__content">Ищешь работу, которая будет интересной и подойдёт твоему образу жизни? Хочешь
+                узнать, какое дело подойдет именно тебе? <span>Пройди тест — всего три вопроса
+помогут определиться, в какой сфере развиваться.</span></p>
             <button class="main__button js-next-button" data-go-to="type">Начнём!</button>
         </div>
     </div>
@@ -55,12 +49,6 @@
                                 class="game-flex__text-absolute-bg"
                         />
                     </picture>
-                    <img
-                            src="./images/rjd-decor_black.svg"
-                            alt="Декоративная картинка"
-                            width="185"
-                            class="game-flex__head-decor"
-                    />
                     <p class="game-flex__head-text">Выбери свою<br/>атмосферу</p>
                 </div>
                 <div class="game-flex__footer">
@@ -75,7 +63,7 @@
             </div>
             <div class="game-flex__item game-flex__list">
                 <div class="game-flex__list-item">
-                    <input type="radio" name="type" class="js-type" value="question_1[data-type='На производстве']"
+                    <input type="radio" name="type" class="js-type" value="powers[data-type='На производстве']"
                            class="js-type">
                     <p class="game-flex__counter">1</p>
                     <div class="game-flex__list-head">
@@ -98,7 +86,7 @@
                     </div>
                 </div>
                 <div class="game-flex__list-item">
-                    <input type="radio" name="type" class="js-type" value="question_1[data-type='В пути']">
+                    <input type="radio" name="type" class="js-type" value="powers[data-type='В пути']">
                     <p class="game-flex__counter">2</p>
                     <div class="game-flex__list-head">
                         <picture>
@@ -120,7 +108,7 @@
                     </div>
                 </div>
                 <div class="game-flex__list-item">
-                    <input type="radio" name="type" class="js-type" value="question_1[data-type='Гибрид']">
+                    <input type="radio" name="type" class="js-type" value="powers[data-type='Гибрид']">
                     <p class="game-flex__counter">3</p>
                     <div class="game-flex__list-head">
                         <picture>
@@ -142,7 +130,7 @@
                     </div>
                 </div>
                 <div class="game-flex__list-item">
-                    <input type="radio" name="type" class="js-type" value="question_1[data-type='Свежий воздух']">
+                    <input type="radio" name="type" class="js-type" value="powers[data-type='Свежий воздух']">
                     <p class="game-flex__counter">4</p>
                     <div class="game-flex__list-head">
                         <picture>
@@ -164,7 +152,7 @@
                     </div>
                 </div>
                 <div class="game-flex__list-item">
-                    <input type="radio" name="type" class="js-type" value="question_1[data-type='Офис']">
+                    <input type="radio" name="type" class="js-type" value="powers[data-type='Офис']">
                     <p class="game-flex__counter">5</p>
                     <div class="game-flex__list-head">
                         <picture>
@@ -187,7 +175,7 @@
             </div>
         </div>
     </div>
-    <div class="game__section question_1" data-type="Офис">
+    <div class="game__section powers" data-type="Офис">
         <div class="container game-flex">
             <div class="game-flex__item game-flex__text-content">
                 <div class="game-flex__head">
@@ -202,14 +190,8 @@
                                 class="game-flex__text-absolute-bg"
                         />
                     </picture>
-                    <img
-                            src="./images/rjd-decor_black.svg"
-                            alt="Декоративная картинка"
-                            width="185"
-                            class="game-flex__head-decor"
-                    />
                     <p class="game-flex__head-text">Выбери свои<br/>суперсилы</p>
-                    <p class="game-flex__head-type game-flex__head-type_1">Офис</p>
+                    <p class="game-flex__head-type game-flex__head-type_1">офис</p>
                 </div>
                 <div class="game-flex__footer">
                     <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
@@ -217,7 +199,7 @@
                     <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
                        target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
                     <button class="game-flex__footer-button js-next-button" disabled
-                            data-go-to="question_2[data-type='Офис']">Выбрать силы
+                            data-go-to="attributes[data-type='Офис']">Выбрать силы
                     </button>
 
                 </div>
@@ -390,29 +372,23 @@
             </div>
         </div>
     </div>
-    <div class="game__section question_2" data-type="Офис">
+    <div class="game__section powers" data-type="Свежий воздух">
         <div class="container game-flex">
             <div class="game-flex__item game-flex__text-content">
                 <div class="game-flex__head">
                     <picture>
                         <source
-                                srcset="./images/powers-1.png 1x, ./images/powers-1@2x.png 2x"
+                                srcset="./images/powers-2.png 1x, ./images/powers-2@2x.png 2x"
                         />
                         <img
-                                src="./images/powers-1.png"
-                                srcset="./images/powers-1.png 1x, ./images/powers-1@2x.png 2x"
+                                src="./images/powers-2.png"
+                                srcset="./images/powers-2.png 1x, ./images/powers-2@2x.png 2x"
                                 alt=""
                                 class="game-flex__text-absolute-bg"
                         />
                     </picture>
-                    <img
-                            src="./images/rjd-decor_black.svg"
-                            alt="Декоративная картинка"
-                            width="185"
-                            class="game-flex__head-decor"
-                    />
                     <p class="game-flex__head-text">Выбери свои<br/>суперсилы</p>
-                    <p class="game-flex__head-type game-flex__head-type_1">Офис</p>
+                    <p class="game-flex__head-type game-flex__head-type_2">свежий воздух</p>
                 </div>
                 <div class="game-flex__footer">
                     <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
@@ -420,7 +396,7 @@
                     <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
                        target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
                     <button class="game-flex__footer-button js-next-button" disabled
-                            data-go-to="result[data-type='Офис']">Выбрать силы
+                            data-go-to="attributes[data-type='Свежий воздух']">Выбрать силы
                     </button>
 
                 </div>
@@ -430,58 +406,58 @@
                     <div class="game-flex__list-head">
                         <picture>
                             <source
-                                    srcset="./images/powers-list-1-1.png 1x, ./images/powers-list-1-1@2x.png 2x"
+                                    srcset="./images/powers-list-2-1.png 1x, ./images/powers-list-2-1@2x.png 2x"
                             />
                             <img
-                                    src="./images/powers-list-1-1.png"
-                                    srcset="./images/powers-list-1-1.png 1x, ./images/powers-list-1-1@2x.png 2x"
+                                    src="./images/powers-list-2-1.png"
+                                    srcset="./images/powers-list-2-1.png 1x, ./images/powers-list-2-1@2x.png 2x"
                                     alt=""
                                     width="240"
                             />
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="1">
+                        <input type="checkbox" name="choose-2" class="js-choose" value="1">
                         <p class="game-flex__counter">1</p>
-                        <p class="game-flex__list-content">Многозадачный</p>
+                        <p class="game-flex__list-content">Не боюсь трудностей</p>
                     </div>
                 </div>
                 <div class="game-flex__list-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
-                                    srcset="./images/powers-list-1-2.png 1x, ./images/powers-list-1-2@2x.png 2x"
+                                    srcset="./images/powers-list-2-2.png 1x, ./images/powers-list-2-2@2x.png 2x"
                             />
                             <img
-                                    src="./images/powers-list-1-2.png"
-                                    srcset="./images/powers-list-1-2.png 1x, ./images/powers-list-1-2@2x.png 2x"
+                                    src="./images/powers-list-2-2.png"
+                                    srcset="./images/powers-list-2-2.png 1x, ./images/powers-list-2-2@2x.png 2x"
                                     alt=""
                                     width="240"
                             />
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="2">
+                        <input type="checkbox" name="choose-2" class="js-choose" value="2">
                         <p class="game-flex__counter">2</p>
-                        <p class="game-flex__list-content">Управляю хаосом</p>
+                        <p class="game-flex__list-content">Люблю порядок</p>
                     </div>
                 </div>
                 <div class="game-flex__list-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
-                                    srcset="./images/powers-list-1-3.png 1x, ./images/powers-list-1-3@2x.png 2x"
+                                    srcset="./images/powers-list-2-3.png 1x, ./images/powers-list-2-3@2x.png 2x"
                             />
                             <img
-                                    src="./images/powers-list-1-3.png"
-                                    srcset="./images/powers-list-1-3.png 1x, ./images/powers-list-1-3@2x.png 2x"
+                                    src="./images/powers-list-2-3.png"
+                                    srcset="./images/powers-list-2-3.png 1x, ./images/powers-list-2-3@2x.png 2x"
                                     alt=""
                                     width="240"
                             />
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="3">
+                        <input type="checkbox" name="choose-2" class="js-choose" value="3">
                         <p class="game-flex__counter">3</p>
                         <p class="game-flex__list-content">Довожу начатое до конца</p>
                     </div>
@@ -490,18 +466,18 @@
                     <div class="game-flex__list-head">
                         <picture>
                             <source
-                                    srcset="./images/powers-list-1-4.png 1x, ./images/powers-list-1-4@2x.png 2x"
+                                    srcset="./images/powers-list-2-4.png 1x, ./images/powers-list-2-4@2x.png 2x"
                             />
                             <img
-                                    src="./images/powers-list-1-4.png"
-                                    srcset="./images/powers-list-1-4.png 1x, ./images/powers-list-1-4@2x.png 2x"
+                                    src="./images/powers-list-2-4.png"
+                                    srcset="./images/powers-list-2-4.png 1x, ./images/powers-list-2-4@2x.png 2x"
                                     alt=""
                                     width="240"
                             />
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="4">
+                        <input type="checkbox" name="choose-2" class="js-choose" value="4">
                         <p class="game-flex__counter">4</p>
                         <p class="game-flex__list-content">Вы вообще видели мою силу духа?</p>
                     </div>
@@ -510,18 +486,214 @@
                     <div class="game-flex__list-head">
                         <picture>
                             <source
-                                    srcset="./images/powers-list-1-5.png 1x, ./images/powers-list-1-5@2x.png 2x"
+                                    srcset="./images/powers-list-2-5.png 1x, ./images/powers-list-2-5@2x.png 2x"
                             />
                             <img
-                                    src="./images/powers-list-1-5.png"
-                                    srcset="./images/powers-list-1-5.png 1x, ./images/powers-list-1-5@2x.png 2x"
+                                    src="./images/powers-list-2-5.png"
+                                    srcset="./images/powers-list-2-5.png 1x, ./images/powers-list-2-5@2x.png 2x"
                                     alt=""
                                     width="240"
                             />
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="5">
+                        <input type="checkbox" name="choose-2" class="js-choose" value="5">
+                        <p class="game-flex__counter">5</p>
+                        <p class="game-flex__list-content">Ответственность – моё второе имя</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-2-6.png 1x, ./images/powers-list-2-6@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-2-6.png"
+                                    srcset="./images/powers-list-2-6.png 1x, ./images/powers-list-2-6@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-2" class="js-choose" value="6">
+                        <p class="game-flex__counter">6</p>
+                        <p class="game-flex__list-content">Командный игрок</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-2-7.png 1x, ./images/powers-list-2-7@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-2-7.png"
+                                    srcset="./images/powers-list-2-7.png 1x, ./images/powers-list-2-7@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-2" class="js-choose" value="7">
+                        <p class="game-flex__counter">7</p>
+                        <p class="game-flex__list-content">На «ты» с&nbsp;любой техникой</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-2-8.png 1x, ./images/powers-list-2-8@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-2-8.png"
+                                    srcset="./images/powers-list-2-8.png 1x, ./images/powers-list-2-8@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-2" class="js-choose" value="8">
+                        <p class="game-flex__counter">8</p>
+                        <p class="game-flex__list-content">Закручиваю гайки взглядом</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section powers" data-type="Гибрид">
+        <div class="container game-flex">
+            <div class="game-flex__item game-flex__text-content">
+                <div class="game-flex__head">
+                    <picture>
+                        <source
+                                srcset="./images/powers-3.png 1x, ./images/powers-3@2x.png 2x"
+                        />
+                        <img
+                                src="./images/powers-3.png"
+                                srcset="./images/powers-3.png 1x, ./images/powers-3@2x.png 2x"
+                                alt=""
+                                class="game-flex__text-absolute-bg"
+                        />
+                    </picture>
+                    <p class="game-flex__head-text">Выбери свои<br/>суперсилы</p>
+                    <p class="game-flex__head-type game-flex__head-type_3">гибрид</p>
+                </div>
+                <div class="game-flex__footer">
+                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
+                            src="./images/home_icon.svg" alt="" width="24"></a>
+                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
+                       target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
+                    <button class="game-flex__footer-button js-next-button" disabled
+                            data-go-to="attributes[data-type='Гибрид']">Выбрать силы
+                    </button>
+
+                </div>
+            </div>
+            <div class="game-flex__item game-flex__list">
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-3-1.png 1x, ./images/powers-list-3-1@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-3-1.png"
+                                    srcset="./images/powers-list-3-1.png 1x, ./images/powers-list-3-1@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-3" class="js-choose" value="1">
+                        <p class="game-flex__counter">1</p>
+                        <p class="game-flex__list-content">Многозадачный</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-3-2.png 1x, ./images/powers-list-3-2@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-3-2.png"
+                                    srcset="./images/powers-list-3-2.png 1x, ./images/powers-list-3-2@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-3" class="js-choose" value="2">
+                        <p class="game-flex__counter">2</p>
+                        <p class="game-flex__list-content">Управляю хаосом</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-3-3.png 1x, ./images/powers-list-3-3@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-3-3.png"
+                                    srcset="./images/powers-list-3-3.png 1x, ./images/powers-list-3-3@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-3" class="js-choose" value="3">
+                        <p class="game-flex__counter">3</p>
+                        <p class="game-flex__list-content">Довожу начатое до конца</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-3-4.png 1x, ./images/powers-list-3-4@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-3-4.png"
+                                    srcset="./images/powers-list-3-4.png 1x, ./images/powers-list-3-4@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-3" class="js-choose" value="4">
+                        <p class="game-flex__counter">4</p>
+                        <p class="game-flex__list-content big">И&nbsp;в&nbsp;офисе<br/>и&nbsp;в&nbsp;кафе — работаю одинаково хорошо</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-3-5.png 1x, ./images/powers-list-3-5@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-3-5.png"
+                                    srcset="./images/powers-list-3-5.png 1x, ./images/powers-list-3-5@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-3" class="js-choose" value="5">
                         <p class="game-flex__counter">5</p>
                         <p class="game-flex__list-content">Не боюсь ответственности</p>
                     </div>
@@ -530,11 +702,11 @@
                     <div class="game-flex__list-head">
                         <picture>
                             <source
-                                    srcset="./images/powers-list-1-6.png 1x, ./images/powers-list-1-6@2x.png 2x"
+                                    srcset="./images/powers-list-3-6.png 1x, ./images/powers-list-3-6@2x.png 2x"
                             />
                             <img
-                                    src="./images/powers-list-1-6.png"
-                                    srcset="./images/powers-list-1-6.png 1x, ./images/powers-list-1-6@2x.png 2x"
+                                    src="./images/powers-list-3-6.png"
+                                    srcset="./images/powers-list-3-6.png 1x, ./images/powers-list-3-6@2x.png 2x"
                                     alt=""
                                     width="240"
 
@@ -542,9 +714,9 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="6">
+                        <input type="checkbox" name="choose-3" class="js-choose" value="6">
                         <p class="game-flex__counter">6</p>
-                        <p class="game-flex__list-content">Могу договориться о&nbsp;чём угодно и&nbsp;с&nbsp;кем
+                        <p class="game-flex__list-content big">Могу договориться о&nbsp;чём угодно и&nbsp;с&nbsp;кем
                             угодно</p>
                     </div>
                 </div>
@@ -552,11 +724,11 @@
                     <div class="game-flex__list-head">
                         <picture>
                             <source
-                                    srcset="./images/powers-list-1-7.png 1x, ./images/powers-list-1-7@2x.png 2x"
+                                    srcset="./images/powers-list-3-7.png 1x, ./images/powers-list-3-7@2x.png 2x"
                             />
                             <img
-                                    src="./images/powers-list-1-7.png"
-                                    srcset="./images/powers-list-1-7.png 1x, ./images/powers-list-1-7@2x.png 2x"
+                                    src="./images/powers-list-3-7.png"
+                                    srcset="./images/powers-list-3-7.png 1x, ./images/powers-list-3-7@2x.png 2x"
                                     alt=""
                                     width="240"
 
@@ -564,20 +736,20 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="7">
+                        <input type="checkbox" name="choose-3" class="js-choose" value="7">
                         <p class="game-flex__counter">7</p>
-                        <p class="game-flex__list-content">Я с&nbsp;таблицами на&nbsp;«ты»</p>
+                        <p class="game-flex__list-content">Моя продуктивность бьёт рекорды</p>
                     </div>
                 </div>
                 <div class="game-flex__list-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
-                                    srcset="./images/powers-list-1-8.png 1x, ./images/powers-list-1-8@2x.png 2x"
+                                    srcset="./images/powers-list-3-8.png 1x, ./images/powers-list-3-8@2x.png 2x"
                             />
                             <img
-                                    src="./images/powers-list-1-8.png"
-                                    srcset="./images/powers-list-1-8.png 1x, ./images/powers-list-1-8@2x.png 2x"
+                                    src="./images/powers-list-3-8.png"
+                                    srcset="./images/powers-list-3-8.png 1x, ./images/powers-list-3-8@2x.png 2x"
                                     alt=""
                                     width="240"
 
@@ -585,9 +757,401 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="8">
+                        <input type="checkbox" name="choose-3" class="js-choose" value="8">
                         <p class="game-flex__counter">8</p>
                         <p class="game-flex__list-content">От меня не&nbsp;ускользнёт ни&nbsp;одна деталь</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section powers" data-type="В пути">
+        <div class="container game-flex">
+            <div class="game-flex__item game-flex__text-content">
+                <div class="game-flex__head">
+                    <picture>
+                        <source
+                                srcset="./images/powers-4.png 1x, ./images/powers-4@2x.png 2x"
+                        />
+                        <img
+                                src="./images/powers-4.png"
+                                srcset="./images/powers-4.png 1x, ./images/powers-4@2x.png 2x"
+                                alt=""
+                                class="game-flex__text-absolute-bg"
+                        />
+                    </picture>
+                    <p class="game-flex__head-text">Выбери свои<br/>суперсилы</p>
+                    <p class="game-flex__head-type game-flex__head-type_4">в пути</p>
+                </div>
+                <div class="game-flex__footer">
+                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
+                            src="./images/home_icon.svg" alt="" width="24"></a>
+                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
+                       target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
+                    <button class="game-flex__footer-button js-next-button" disabled
+                            data-go-to="attributes[data-type='В пути']">Выбрать силы
+                    </button>
+
+                </div>
+            </div>
+            <div class="game-flex__item game-flex__list">
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-4-1.png 1x, ./images/powers-list-4-1@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-4-1.png"
+                                    srcset="./images/powers-list-4-1.png 1x, ./images/powers-list-4-1@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-4" class="js-choose" value="1">
+                        <p class="game-flex__counter">1</p>
+                        <p class="game-flex__list-content big">Моя скорость реакции поражает даже меня</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-4-2.png 1x, ./images/powers-list-4-2@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-4-2.png"
+                                    srcset="./images/powers-list-4-2.png 1x, ./images/powers-list-4-2@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-4" class="js-choose" value="2">
+                        <p class="game-flex__counter">2</p>
+                        <p class="game-flex__list-content">Предсказываю маршрут по&nbsp;звёздам</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-4-3.png 1x, ./images/powers-list-4-3@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-4-3.png"
+                                    srcset="./images/powers-list-4-3.png 1x, ./images/powers-list-4-3@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-4" class="js-choose" value="3">
+                        <p class="game-flex__counter">3</p>
+                        <p class="game-flex__list-content">Довожу начатое до конца</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-4-4.png 1x, ./images/powers-list-4-4@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-4-4.png"
+                                    srcset="./images/powers-list-4-4.png 1x, ./images/powers-list-4-4@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-4" class="js-choose" value="4">
+                        <p class="game-flex__counter">4</p>
+                        <p class="game-flex__list-content">Вы вообще видели мою силу духа?</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-4-5.png 1x, ./images/powers-list-4-5@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-4-5.png"
+                                    srcset="./images/powers-list-4-5.png 1x, ./images/powers-list-4-5@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-4" class="js-choose" value="5">
+                        <p class="game-flex__counter">5</p>
+                        <p class="game-flex__list-content">Не боюсь ответственности</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-4-6.png 1x, ./images/powers-list-4-6@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-4-6.png"
+                                    srcset="./images/powers-list-4-6.png 1x, ./images/powers-list-4-6@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-4" class="js-choose" value="6">
+                        <p class="game-flex__counter">6</p>
+                        <p class="game-flex__list-content">Я командный игрок</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-4-7.png 1x, ./images/powers-list-4-7@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-4-7.png"
+                                    srcset="./images/powers-list-4-7.png 1x, ./images/powers-list-4-7@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-4" class="js-choose" value="7">
+                        <p class="game-flex__counter">7</p>
+                        <p class="game-flex__list-content">На «ты» с&nbsp;любой техникой</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-4-8.png 1x, ./images/powers-list-4-8@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-4-8.png"
+                                    srcset="./images/powers-list-4-8.png 1x, ./images/powers-list-4-8@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-4" class="js-choose" value="8">
+                        <p class="game-flex__counter">8</p>
+                        <p class="game-flex__list-content">От меня не&nbsp;ускользнёт ни&nbsp;одна деталь</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section powers" data-type="На производстве">
+        <div class="container game-flex">
+            <div class="game-flex__item game-flex__text-content">
+                <div class="game-flex__head">
+                    <picture>
+                        <source
+                                srcset="./images/powers-5.png 1x, ./images/powers-5@2x.png 2x"
+                        />
+                        <img
+                                src="./images/powers-5.png"
+                                srcset="./images/powers-5.png 1x, ./images/powers-5@2x.png 2x"
+                                alt=""
+                                class="game-flex__text-absolute-bg"
+                        />
+                    </picture>
+                    <p class="game-flex__head-text">Выбери свои<br/>суперсилы</p>
+                    <p class="game-flex__head-type game-flex__head-type_5">на производстве</p>
+                </div>
+                <div class="game-flex__footer">
+                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
+                            src="./images/home_icon.svg" alt="" width="24"></a>
+                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
+                       target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
+                    <button class="game-flex__footer-button js-next-button" disabled
+                            data-go-to="attributes[data-type='На производстве']">Выбрать силы
+                    </button>
+
+                </div>
+            </div>
+            <div class="game-flex__item game-flex__list">
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-5-1.png 1x, ./images/powers-list-5-1@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-5-1.png"
+                                    srcset="./images/powers-list-5-1.png 1x, ./images/powers-list-5-1@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-5" class="js-choose" value="1">
+                        <p class="game-flex__counter">1</p>
+                        <p class="game-flex__list-content">Не боюсь трудностей</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-5-2.png 1x, ./images/powers-list-5-2@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-5-2.png"
+                                    srcset="./images/powers-list-5-2.png 1x, ./images/powers-list-5-2@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-5" class="js-choose" value="2">
+                        <p class="game-flex__counter">2</p>
+                        <p class="game-flex__list-content">Я точно знаю, как это должно работать</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-5-3.png 1x, ./images/powers-list-5-3@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-5-3.png"
+                                    srcset="./images/powers-list-5-3.png 1x, ./images/powers-list-5-3@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-5" class="js-choose" value="3">
+                        <p class="game-flex__counter">3</p>
+                        <p class="game-flex__list-content big">Предсказываю размер премии по&nbsp;металлической стружке</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-5-4.png 1x, ./images/powers-list-5-4@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-5-4.png"
+                                    srcset="./images/powers-list-5-4.png 1x, ./images/powers-list-5-4@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-5" class="js-choose" value="4">
+                        <p class="game-flex__counter">4</p>
+                        <p class="game-flex__list-content">Вы вообще видели мою силу духа?</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-5-5.png 1x, ./images/powers-list-5-5@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-5-5.png"
+                                    srcset="./images/powers-list-5-5.png 1x, ./images/powers-list-5-5@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-5" class="js-choose" value="5">
+                        <p class="game-flex__counter">5</p>
+                        <p class="game-flex__list-content">Ответственность – моё второе имя</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-5-6.png 1x, ./images/powers-list-5-6@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-5-6.png"
+                                    srcset="./images/powers-list-5-6.png 1x, ./images/powers-list-5-6@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-5" class="js-choose" value="6">
+                        <p class="game-flex__counter">6</p>
+                        <p class="game-flex__list-content">Мне идёт спецодежда</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-5-7.png 1x, ./images/powers-list-5-7@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-5-7.png"
+                                    srcset="./images/powers-list-5-7.png 1x, ./images/powers-list-5-7@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-5" class="js-choose" value="7">
+                        <p class="game-flex__counter">7</p>
+                        <p class="game-flex__list-content">На «ты» с&nbsp;любой техникой</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/powers-list-5-8.png 1x, ./images/powers-list-5-8@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/powers-list-5-8.png"
+                                    srcset="./images/powers-list-5-8.png 1x, ./images/powers-list-5-8@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-5" class="js-choose" value="8">
+                        <p class="game-flex__counter">8</p>
+                        <p class="game-flex__list-content">Закручиваю гайки взглядом</p>
                     </div>
                 </div>
             </div>
@@ -609,7 +1173,6 @@
                     </picture>
                     <div class="result__content-text">
                         <div class="result__content-text-item">
-                            <p class="result__content-text-subtitle">Если в самом начале выбрал офис:</p>
                             <h2>Тебе будут по душе эти&nbsp;профессии</h2>
                             <ul class="result__content-text-list">
                                 <li class="result__content-text-list-item">маркетолог</li>
@@ -618,11 +1181,161 @@
                                 <li class="result__content-text-list-item">аналитик</li>
                                 <li class="result__content-text-list-item">юрист по интеллектуальной собственности</li>
                             </ul>
-                            <p class="result__content-text-content">Кстати, в ржд есть больше 1000 самых разных профессий и специальностей!<br/>Выбрать подходящую вакансию можно на&nbsp;карьерном портале team.Rzd.Ru</p>
+                            <p class="result__content-text-content">Кстати, в РЖД есть больше 1000 самых разных
+                                профессий и специальностей!<br/>Выбрать подходящую вакансию можно на&nbsp;Карьерном
+                                портале <a href="https://team.rzd.ru/" target="_blank">team.Rzd.Ru</a></p>
                         </div>
                         <div class="result__content-text-item">
-                            <p class="result__socials-text">Хочешь узнать больше о&nbsp;работе в компании? Подписывайся на наше карьерное сообщество vk:</p>
-                            <a href="https://vk.com/komandarzd" class="result__socials-link">VK.COM/KOMANDARZD</a>
+                            <p class="result__socials-text">Хочешь узнать больше о&nbsp;работе в компании? Подписывайся
+                                на наше карьерное сообщество vk:</p>
+                            <a href="https://vk.com/komandarzd" class="result__socials-link" target="_blank">VK.COM/KOMANDARZD</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section result" data-type="Свежий воздух">
+        <div class="container">
+            <div class="result__wrapper">
+                <div class="result__content">
+                    <picture>
+                        <source
+                                srcset="./images/result-2.png 1x, ./images/result-2@2x.png 2x"
+                        />
+                        <img
+                                src="./images/result-2.png"
+                                alt=""
+                                width="664"
+                        />
+                    </picture>
+                    <div class="result__content-text">
+                        <div class="result__content-text-item">
+                            <h2>Тебе будут по душе эти&nbsp;профессии</h2>
+                            <ul class="result__content-text-list">
+                                <li class="result__content-text-list-item">монтёр пути</li>
+                                <li class="result__content-text-list-item">составитель поездов</li>
+                                <li class="result__content-text-list-item">сигналист</li>
+                                <li class="result__content-text-list-item">проходчик горных склонов</li>
+                                <li class="result__content-text-list-item">электромонтёр</li>
+                            </ul>
+                            <p class="result__content-text-content">Кстати, в РЖД есть больше 1000 самых разных
+                                профессий и специальностей!<br/>Выбрать подходящую вакансию можно на&nbsp;Карьерном
+                                портале <a href="https://team.rzd.ru/" target="_blank">team.Rzd.Ru</a></p>
+                        </div>
+                        <div class="result__content-text-item">
+                            <p class="result__socials-text">Хочешь узнать больше о&nbsp;работе в компании? Подписывайся
+                                на наше карьерное сообщество vk:</p>
+                            <a href="https://vk.com/komandarzd" class="result__socials-link" target="_blank">VK.COM/KOMANDARZD</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section result" data-type="Гибрид">
+        <div class="container">
+            <div class="result__wrapper">
+                <div class="result__content">
+                    <picture>
+                        <source
+                                srcset="./images/result-3.png 1x, ./images/result-3@2x.png 2x"
+                        />
+                        <img
+                                src="./images/result-3.png"
+                                alt=""
+                                width="664"
+                        />
+                    </picture>
+                    <div class="result__content-text">
+                        <div class="result__content-text-item">
+                            <h2>Тебе будут по душе эти&nbsp;профессии</h2>
+                            <ul class="result__content-text-list">
+                                <li class="result__content-text-list-item">архитектор программного обеспечения</li>
+                                <li class="result__content-text-list-item">дата-инженер</li>
+                                <li class="result__content-text-list-item">разработчик беспилотных систем</li>
+                            </ul>
+                            <p class="result__content-text-content">Кстати, в РЖД есть больше 1000 самых разных
+                                профессий и специальностей!<br/>Выбрать подходящую вакансию можно на&nbsp;Карьерном
+                                портале <a href="https://team.rzd.ru/" target="_blank">team.Rzd.Ru</a></p>
+                        </div>
+                        <div class="result__content-text-item">
+                            <p class="result__socials-text">Хочешь узнать больше о&nbsp;работе в компании? Подписывайся
+                                на наше карьерное сообщество vk:</p>
+                            <a href="https://vk.com/komandarzd" class="result__socials-link" target="_blank">VK.COM/KOMANDARZD</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section result" data-type="В пути">
+        <div class="container">
+            <div class="result__wrapper">
+                <div class="result__content">
+                    <picture>
+                        <source
+                                srcset="./images/result-4.png 1x, ./images/result-4@2x.png 2x"
+                        />
+                        <img
+                                src="./images/result-4.png"
+                                alt=""
+                                width="664"
+                        />
+                    </picture>
+                    <div class="result__content-text">
+                        <div class="result__content-text-item">
+                            <h2>Тебе будут по душе эти&nbsp;профессии</h2>
+                            <ul class="result__content-text-list">
+                                <li class="result__content-text-list-item">помощник машиниста</li>
+                                <li class="result__content-text-list-item">машинист</li>
+                                <li class="result__content-text-list-item">проводник</li>
+                                <li class="result__content-text-list-item">начальник поезда</li>
+                            </ul>
+                            <p class="result__content-text-content">Кстати, в РЖД есть больше 1000 самых разных
+                                профессий и специальностей!<br/>Выбрать подходящую вакансию можно на&nbsp;Карьерном
+                                портале <a href="https://team.rzd.ru/" target="_blank">team.Rzd.Ru</a></p>
+                        </div>
+                        <div class="result__content-text-item">
+                            <p class="result__socials-text">Хочешь узнать больше о&nbsp;работе в компании? Подписывайся
+                                на наше карьерное сообщество vk:</p>
+                            <a href="https://vk.com/komandarzd" class="result__socials-link" target="_blank">VK.COM/KOMANDARZD</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section result" data-type="На производстве">
+        <div class="container">
+            <div class="result__wrapper">
+                <div class="result__content">
+                    <picture>
+                        <source
+                                srcset="./images/result-5.png 1x, ./images/result-5@2x.png 2x"
+                        />
+                        <img
+                                src="./images/result-5.png"
+                                alt=""
+                                width="664"
+                        />
+                    </picture>
+                    <div class="result__content-text">
+                        <div class="result__content-text-item">
+                            <h2>Тебе будут по душе эти&nbsp;профессии</h2>
+                            <ul class="result__content-text-list">
+                                <li class="result__content-text-list-item">докер-механизатор</li>
+                                <li class="result__content-text-list-item">электромеханик</li>
+                                <li class="result__content-text-list-item">слесарь по ремонту подвижного состава</li>
+                            </ul>
+                            <p class="result__content-text-content">Кстати, в РЖД есть больше 1000 самых разных
+                                профессий и специальностей!<br/>Выбрать подходящую вакансию можно на&nbsp;Карьерном
+                                портале <a href="https://team.rzd.ru/" target="_blank">team.Rzd.Ru</a></p>
+                        </div>
+                        <div class="result__content-text-item">
+                            <p class="result__socials-text">Хочешь узнать больше о&nbsp;работе в компании? Подписывайся
+                                на наше карьерное сообщество vk:</p>
+                            <a href="https://vk.com/komandarzd" class="result__socials-link" target="_blank">VK.COM/KOMANDARZD</a>
                         </div>
                     </div>
                 </div>
