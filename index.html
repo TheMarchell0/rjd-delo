@@ -28,8 +28,7 @@
                 в себе, быть независимым и реализованным. А ещё — это крутая возможность накопить на свою мечту,
                 долгожданный отпуск и даже — на собственную квартиру</p>
             <p class="main__content">Ищешь работу, которая будет интересной и подойдёт твоему образу жизни? Хочешь
-                узнать, какое дело подойдет именно тебе? <span>Пройди тест — всего три вопроса
-помогут определиться, в какой сфере развиваться.</span></p>
+                узнать, какое дело подойдет именно тебе? <span>Пройди тест — всего три вопроса<br/>помогут определиться, в какой сфере развиваться.</span></p>
             <button class="main__button js-next-button" data-go-to="type">Начнём!</button>
         </div>
     </div>
@@ -61,10 +60,9 @@
                     </button>
                 </div>
             </div>
-            <div class="game-flex__item game-flex__list">
-                <div class="game-flex__list-item">
-                    <input type="radio" name="type" class="js-type" value="powers[data-type='На производстве']"
-                           class="js-type">
+            <div class="game-flex__item game-flex__list js-choose-list">
+                <div class="game-flex__list-item js-choose-item">
+                    <input type="radio" name="type" class="js-type" value="powers[data-type='На производстве']">
                     <p class="game-flex__counter">1</p>
                     <div class="game-flex__list-head">
                         <picture>
@@ -85,7 +83,7 @@
                             тот шлифовальный станок.</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <input type="radio" name="type" class="js-type" value="powers[data-type='В пути']">
                     <p class="game-flex__counter">2</p>
                     <div class="game-flex__list-head">
@@ -107,7 +105,7 @@
                             проносящимися мимо пейзажами.</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <input type="radio" name="type" class="js-type" value="powers[data-type='Гибрид']">
                     <p class="game-flex__counter">3</p>
                     <div class="game-flex__list-head">
@@ -125,11 +123,10 @@
                     </div>
                     <div class="game-flex__list-footer">
                         <p class="game-flex__list-title">Гибрид</p>
-                        <p class="game-flex__list-content">Иногда душа просит удаленку. А ещё у&nbsp;меня есть любимая
-                            пижама.</p>
+                        <p class="game-flex__list-content">Иногда душа просит удаленку.<br/>А ещё у&nbsp;меня есть&nbsp;любимая пижама.</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <input type="radio" name="type" class="js-type" value="powers[data-type='Свежий воздух']">
                     <p class="game-flex__counter">4</p>
                     <div class="game-flex__list-head">
@@ -151,7 +148,7 @@
                             мне!</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <input type="radio" name="type" class="js-type" value="powers[data-type='Офис']">
                     <p class="game-flex__counter">5</p>
                     <div class="game-flex__list-head">
@@ -163,7 +160,7 @@
                                     src="./images/choose-type-5.png"
                                     srcset="./images/choose-type-5.png 1x, ./images/choose-type-5@2x.png 2x"
                                     alt=""
-                                    width="138"
+                                    width="163"
                             />
                         </picture>
                     </div>
@@ -204,8 +201,8 @@
 
                 </div>
             </div>
-            <div class="game-flex__item game-flex__list">
-                <div class="game-flex__list-item">
+            <div class="game-flex__item game-flex__list js-choose-list">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -220,12 +217,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="1">
+                        <input type="checkbox" name="choose-powers-1" class="js-choose" value="1">
                         <p class="game-flex__counter">1</p>
                         <p class="game-flex__list-content">Многозадачный</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -240,12 +237,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="2">
+                        <input type="checkbox" name="choose-powers-1" class="js-choose" value="2">
                         <p class="game-flex__counter">2</p>
                         <p class="game-flex__list-content">Управляю хаосом</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -260,12 +257,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="3">
+                        <input type="checkbox" name="choose-powers-1" class="js-choose" value="3">
                         <p class="game-flex__counter">3</p>
                         <p class="game-flex__list-content">Довожу начатое до конца</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -280,12 +277,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="4">
+                        <input type="checkbox" name="choose-powers-1" class="js-choose" value="4">
                         <p class="game-flex__counter">4</p>
                         <p class="game-flex__list-content">Вы вообще видели мою силу духа?</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -300,12 +297,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="5">
+                        <input type="checkbox" name="choose-powers-1" class="js-choose" value="5">
                         <p class="game-flex__counter">5</p>
                         <p class="game-flex__list-content">Не боюсь ответственности</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -321,13 +318,13 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="6">
+                        <input type="checkbox" name="choose-powers-1" class="js-choose" value="6">
                         <p class="game-flex__counter">6</p>
                         <p class="game-flex__list-content">Могу договориться о&nbsp;чём угодно и&nbsp;с&nbsp;кем
                             угодно</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -343,12 +340,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="7">
+                        <input type="checkbox" name="choose-powers-1" class="js-choose" value="7">
                         <p class="game-flex__counter">7</p>
                         <p class="game-flex__list-content">Я с&nbsp;таблицами на&nbsp;«ты»</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -364,7 +361,7 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-1" class="js-choose" value="8">
+                        <input type="checkbox" name="choose-powers-1" class="js-choose" value="8">
                         <p class="game-flex__counter">8</p>
                         <p class="game-flex__list-content">От меня не&nbsp;ускользнёт ни&nbsp;одна деталь</p>
                     </div>
@@ -401,8 +398,8 @@
 
                 </div>
             </div>
-            <div class="game-flex__item game-flex__list">
-                <div class="game-flex__list-item">
+            <div class="game-flex__item game-flex__list js-choose-list">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -417,12 +414,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-2" class="js-choose" value="1">
+                        <input type="checkbox" name="choose-powers-2" class="js-choose" value="1">
                         <p class="game-flex__counter">1</p>
                         <p class="game-flex__list-content">Не боюсь трудностей</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -437,12 +434,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-2" class="js-choose" value="2">
+                        <input type="checkbox" name="choose-powers-2" class="js-choose" value="2">
                         <p class="game-flex__counter">2</p>
                         <p class="game-flex__list-content">Люблю порядок</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -457,12 +454,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-2" class="js-choose" value="3">
+                        <input type="checkbox" name="choose-powers-2" class="js-choose" value="3">
                         <p class="game-flex__counter">3</p>
                         <p class="game-flex__list-content">Довожу начатое до конца</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -477,12 +474,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-2" class="js-choose" value="4">
+                        <input type="checkbox" name="choose-powers-2" class="js-choose" value="4">
                         <p class="game-flex__counter">4</p>
                         <p class="game-flex__list-content">Вы вообще видели мою силу духа?</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -497,12 +494,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-2" class="js-choose" value="5">
+                        <input type="checkbox" name="choose-powers-2" class="js-choose" value="5">
                         <p class="game-flex__counter">5</p>
                         <p class="game-flex__list-content">Ответственность – моё второе имя</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -518,12 +515,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-2" class="js-choose" value="6">
+                        <input type="checkbox" name="choose-powers-2" class="js-choose" value="6">
                         <p class="game-flex__counter">6</p>
                         <p class="game-flex__list-content">Командный игрок</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -539,12 +536,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-2" class="js-choose" value="7">
+                        <input type="checkbox" name="choose-powers-2" class="js-choose" value="7">
                         <p class="game-flex__counter">7</p>
                         <p class="game-flex__list-content">На «ты» с&nbsp;любой техникой</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -560,7 +557,7 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-2" class="js-choose" value="8">
+                        <input type="checkbox" name="choose-powers-2" class="js-choose" value="8">
                         <p class="game-flex__counter">8</p>
                         <p class="game-flex__list-content">Закручиваю гайки взглядом</p>
                     </div>
@@ -597,8 +594,8 @@
 
                 </div>
             </div>
-            <div class="game-flex__item game-flex__list">
-                <div class="game-flex__list-item">
+            <div class="game-flex__item game-flex__list js-choose-list">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -613,12 +610,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-3" class="js-choose" value="1">
+                        <input type="checkbox" name="choose-powers-3" class="js-choose" value="1">
                         <p class="game-flex__counter">1</p>
                         <p class="game-flex__list-content">Многозадачный</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -633,12 +630,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-3" class="js-choose" value="2">
+                        <input type="checkbox" name="choose-powers-3" class="js-choose" value="2">
                         <p class="game-flex__counter">2</p>
                         <p class="game-flex__list-content">Управляю хаосом</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -653,12 +650,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-3" class="js-choose" value="3">
+                        <input type="checkbox" name="choose-powers-3" class="js-choose" value="3">
                         <p class="game-flex__counter">3</p>
                         <p class="game-flex__list-content">Довожу начатое до конца</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -673,12 +670,13 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-3" class="js-choose" value="4">
+                        <input type="checkbox" name="choose-powers-3" class="js-choose" value="4">
                         <p class="game-flex__counter">4</p>
-                        <p class="game-flex__list-content big">И&nbsp;в&nbsp;офисе<br/>и&nbsp;в&nbsp;кафе — работаю одинаково хорошо</p>
+                        <p class="game-flex__list-content big">И&nbsp;в&nbsp;офисе<br/>и&nbsp;в&nbsp;кафе — работаю
+                            одинаково хорошо</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -693,12 +691,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-3" class="js-choose" value="5">
+                        <input type="checkbox" name="choose-powers-3" class="js-choose" value="5">
                         <p class="game-flex__counter">5</p>
                         <p class="game-flex__list-content">Не боюсь ответственности</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -714,13 +712,13 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-3" class="js-choose" value="6">
+                        <input type="checkbox" name="choose-powers-3" class="js-choose" value="6">
                         <p class="game-flex__counter">6</p>
                         <p class="game-flex__list-content big">Могу договориться о&nbsp;чём угодно и&nbsp;с&nbsp;кем
                             угодно</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -736,12 +734,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-3" class="js-choose" value="7">
+                        <input type="checkbox" name="choose-powers-3" class="js-choose" value="7">
                         <p class="game-flex__counter">7</p>
                         <p class="game-flex__list-content">Моя продуктивность бьёт рекорды</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -757,7 +755,7 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-3" class="js-choose" value="8">
+                        <input type="checkbox" name="choose-powers-3" class="js-choose" value="8">
                         <p class="game-flex__counter">8</p>
                         <p class="game-flex__list-content">От меня не&nbsp;ускользнёт ни&nbsp;одна деталь</p>
                     </div>
@@ -794,8 +792,8 @@
 
                 </div>
             </div>
-            <div class="game-flex__item game-flex__list">
-                <div class="game-flex__list-item">
+            <div class="game-flex__item game-flex__list js-choose-list">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -810,12 +808,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-4" class="js-choose" value="1">
+                        <input type="checkbox" name="choose-powers-4" class="js-choose" value="1">
                         <p class="game-flex__counter">1</p>
                         <p class="game-flex__list-content big">Моя скорость реакции поражает даже меня</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -830,12 +828,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-4" class="js-choose" value="2">
+                        <input type="checkbox" name="choose-powers-4" class="js-choose" value="2">
                         <p class="game-flex__counter">2</p>
                         <p class="game-flex__list-content">Предсказываю маршрут по&nbsp;звёздам</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -850,12 +848,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-4" class="js-choose" value="3">
+                        <input type="checkbox" name="choose-powers-4" class="js-choose" value="3">
                         <p class="game-flex__counter">3</p>
                         <p class="game-flex__list-content">Довожу начатое до конца</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -870,12 +868,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-4" class="js-choose" value="4">
+                        <input type="checkbox" name="choose-powers-4" class="js-choose" value="4">
                         <p class="game-flex__counter">4</p>
                         <p class="game-flex__list-content">Вы вообще видели мою силу духа?</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -890,12 +888,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-4" class="js-choose" value="5">
+                        <input type="checkbox" name="choose-powers-4" class="js-choose" value="5">
                         <p class="game-flex__counter">5</p>
                         <p class="game-flex__list-content">Не боюсь ответственности</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -911,12 +909,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-4" class="js-choose" value="6">
+                        <input type="checkbox" name="choose-powers-4" class="js-choose" value="6">
                         <p class="game-flex__counter">6</p>
                         <p class="game-flex__list-content">Я командный игрок</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -932,12 +930,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-4" class="js-choose" value="7">
+                        <input type="checkbox" name="choose-powers-4" class="js-choose" value="7">
                         <p class="game-flex__counter">7</p>
                         <p class="game-flex__list-content">На «ты» с&nbsp;любой техникой</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -953,7 +951,7 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-4" class="js-choose" value="8">
+                        <input type="checkbox" name="choose-powers-4" class="js-choose" value="8">
                         <p class="game-flex__counter">8</p>
                         <p class="game-flex__list-content">От меня не&nbsp;ускользнёт ни&nbsp;одна деталь</p>
                     </div>
@@ -990,8 +988,8 @@
 
                 </div>
             </div>
-            <div class="game-flex__item game-flex__list">
-                <div class="game-flex__list-item">
+            <div class="game-flex__item game-flex__list js-choose-list">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -1006,12 +1004,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-5" class="js-choose" value="1">
+                        <input type="checkbox" name="choose-powers-5" class="js-choose" value="1">
                         <p class="game-flex__counter">1</p>
                         <p class="game-flex__list-content">Не боюсь трудностей</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -1026,12 +1024,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-5" class="js-choose" value="2">
+                        <input type="checkbox" name="choose-powers-5" class="js-choose" value="2">
                         <p class="game-flex__counter">2</p>
                         <p class="game-flex__list-content">Я точно знаю, как это должно работать</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -1046,12 +1044,13 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-5" class="js-choose" value="3">
+                        <input type="checkbox" name="choose-powers-5" class="js-choose" value="3">
                         <p class="game-flex__counter">3</p>
-                        <p class="game-flex__list-content big">Предсказываю размер премии по&nbsp;металлической стружке</p>
+                        <p class="game-flex__list-content big">Предсказываю размер премии по&nbsp;металлической
+                            стружке</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -1066,12 +1065,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-5" class="js-choose" value="4">
+                        <input type="checkbox" name="choose-powers-5" class="js-choose" value="4">
                         <p class="game-flex__counter">4</p>
                         <p class="game-flex__list-content">Вы вообще видели мою силу духа?</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -1086,12 +1085,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-5" class="js-choose" value="5">
+                        <input type="checkbox" name="choose-powers-5" class="js-choose" value="5">
                         <p class="game-flex__counter">5</p>
                         <p class="game-flex__list-content">Ответственность – моё второе имя</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -1107,12 +1106,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-5" class="js-choose" value="6">
+                        <input type="checkbox" name="choose-powers-5" class="js-choose" value="6">
                         <p class="game-flex__counter">6</p>
                         <p class="game-flex__list-content">Мне идёт спецодежда</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -1128,12 +1127,12 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-5" class="js-choose" value="7">
+                        <input type="checkbox" name="choose-powers-5" class="js-choose" value="7">
                         <p class="game-flex__counter">7</p>
                         <p class="game-flex__list-content">На «ты» с&nbsp;любой техникой</p>
                     </div>
                 </div>
-                <div class="game-flex__list-item">
+                <div class="game-flex__list-item js-choose-item">
                     <div class="game-flex__list-head">
                         <picture>
                             <source
@@ -1149,9 +1148,989 @@
                         </picture>
                     </div>
                     <div class="game-flex__list-footer">
-                        <input type="checkbox" name="choose-5" class="js-choose" value="8">
+                        <input type="checkbox" name="choose-powers-5" class="js-choose" value="8">
                         <p class="game-flex__counter">8</p>
                         <p class="game-flex__list-content">Закручиваю гайки взглядом</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section attributes" data-type="Офис">
+        <div class="container game-flex">
+            <div class="game-flex__item game-flex__text-content">
+                <div class="game-flex__head">
+                    <picture>
+                        <source
+                                srcset="./images/attributes-1.png 1x, ./images/attributes-1@2x.png 2x"
+                        />
+                        <img
+                                src="./images/attributes-1.png"
+                                srcset="./images/attributes-1.png 1x, ./images/attributes-1@2x.png 2x"
+                                alt=""
+                                class="game-flex__text-absolute-bg"
+                        />
+                    </picture>
+                    <p class="game-flex__head-text">Собери<br/>рабочие<br/>атрибуты</p>
+                    <p class="game-flex__head-type game-flex__head-type_1">офис</p>
+                </div>
+                <div class="game-flex__footer">
+                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
+                            src="./images/home_icon.svg" alt="" width="24"></a>
+                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
+                       target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
+                    <button class="game-flex__footer-button js-next-button" disabled
+                            data-go-to="result[data-type='Офис']">Собрать атрибуты
+                    </button>
+
+                </div>
+            </div>
+            <div class="game-flex__item game-flex__list js-choose-list">
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-1-1.png 1x, ./images/attributes-list-1-1@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-1-1.png"
+                                    srcset="./images/attributes-list-1-1.png 1x, ./images/attributes-list-1-1@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-1" class="js-choose" value="1">
+                        <p class="game-flex__counter">1</p>
+                        <p class="game-flex__list-content">Ноутбук</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-1-2.png 1x, ./images/attributes-list-1-2@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-1-2.png"
+                                    srcset="./images/attributes-list-1-2.png 1x, ./images/attributes-list-1-2@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-1" class="js-choose" value="2">
+                        <p class="game-flex__counter">2</p>
+                        <p class="game-flex__list-content">Кофейная чашка</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-1-3.png 1x, ./images/attributes-list-1-3@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-1-3.png"
+                                    srcset="./images/attributes-list-1-3.png 1x, ./images/attributes-list-1-3@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-1" class="js-choose" value="3">
+                        <p class="game-flex__counter">3</p>
+                        <p class="game-flex__list-content">«Выключи кондиционер! Мне холодно»</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-1-4.png 1x, ./images/attributes-list-1-4@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-1-4.png"
+                                    srcset="./images/attributes-list-1-4.png 1x, ./images/attributes-list-1-4@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-1" class="js-choose" value="4">
+                        <p class="game-flex__counter">4</p>
+                        <p class="game-flex__list-content">Телефон</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-1-5.png 1x, ./images/attributes-list-1-5@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-1-5.png"
+                                    srcset="./images/attributes-list-1-5.png 1x, ./images/attributes-list-1-5@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-1" class="js-choose" value="5">
+                        <p class="game-flex__counter">5</p>
+                        <p class="game-flex__list-content">Очередной рабочий чатик</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-1-6.png 1x, ./images/attributes-list-1-6@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-1-6.png"
+                                    srcset="./images/attributes-list-1-6.png 1x, ./images/attributes-list-1-6@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-1" class="js-choose" value="6">
+                        <p class="game-flex__counter">6</p>
+                        <p class="game-flex__list-content">Флипчарт</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-1-7.png 1x, ./images/attributes-list-1-7@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-1-7.png"
+                                    srcset="./images/attributes-list-1-7.png 1x, ./images/attributes-list-1-7@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-1" class="js-choose" value="7">
+                        <p class="game-flex__counter">7</p>
+                        <p class="game-flex__list-content">Рубашка</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-1-8.png 1x, ./images/attributes-list-1-8@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-1-8.png"
+                                    srcset="./images/attributes-list-1-8.png 1x, ./images/attributes-list-1-8@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-1" class="js-choose" value="8">
+                        <p class="game-flex__counter">8</p>
+                        <p class="game-flex__list-content">Кто-то опять разогрел рыбу в&nbsp;микроволновке</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section attributes" data-type="Свежий воздух">
+        <div class="container game-flex">
+            <div class="game-flex__item game-flex__text-content">
+                <div class="game-flex__head">
+                    <picture>
+                        <source
+                                srcset="./images/attributes-2.png 1x, ./images/attributes-2@2x.png 2x"
+                        />
+                        <img
+                                src="./images/attributes-2.png"
+                                srcset="./images/attributes-2.png 1x, ./images/attributes-2@2x.png 2x"
+                                alt=""
+                                class="game-flex__text-absolute-bg"
+                        />
+                    </picture>
+                    <p class="game-flex__head-text">Собери<br/>рабочие<br/>атрибуты</p>
+                    <p class="game-flex__head-type game-flex__head-type_2">свежий воздух</p>
+                </div>
+                <div class="game-flex__footer">
+                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
+                            src="./images/home_icon.svg" alt="" width="24"></a>
+                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
+                       target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
+                    <button class="game-flex__footer-button js-next-button" disabled
+                            data-go-to="result[data-type='Свежий воздух']">Собрать атрибуты
+                    </button>
+
+                </div>
+            </div>
+            <div class="game-flex__item game-flex__list js-choose-list">
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-2-1.png 1x, ./images/attributes-list-2-1@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-2-1.png"
+                                    srcset="./images/attributes-list-2-1.png 1x, ./images/attributes-list-2-1@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-2" class="js-choose" value="1">
+                        <p class="game-flex__counter">1</p>
+                        <p class="game-flex__list-content">Рация</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-2-2.png 1x, ./images/attributes-list-2-2@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-2-2.png"
+                                    srcset="./images/attributes-list-2-2.png 1x, ./images/attributes-list-2-2@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-2" class="js-choose" value="2">
+                        <p class="game-flex__counter">2</p>
+                        <p class="game-flex__list-content big">Кувалда — пригодится в&nbsp;любой ситуации</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-2-3.png 1x, ./images/attributes-list-2-3@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-2-3.png"
+                                    srcset="./images/attributes-list-2-3.png 1x, ./images/attributes-list-2-3@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-2" class="js-choose" value="3">
+                        <p class="game-flex__counter">3</p>
+                        <p class="game-flex__list-content">Дефектоскопная тележка</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-2-4.png 1x, ./images/attributes-list-2-4@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-2-4.png"
+                                    srcset="./images/attributes-list-2-4.png 1x, ./images/attributes-list-2-4@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-2" class="js-choose" value="4">
+                        <p class="game-flex__counter">4</p>
+                        <p class="game-flex__list-content">Отбойник</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-2-5.png 1x, ./images/attributes-list-2-5@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-2-5.png"
+                                    srcset="./images/attributes-list-2-5.png 1x, ./images/attributes-list-2-5@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-2" class="js-choose" value="5">
+                        <p class="game-flex__counter">5</p>
+                        <p class="game-flex__list-content">Сигнальный жилет</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-2-6.png 1x, ./images/attributes-list-2-6@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-2-6.png"
+                                    srcset="./images/attributes-list-2-6.png 1x, ./images/attributes-list-2-6@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-2" class="js-choose" value="6">
+                        <p class="game-flex__counter">6</p>
+                        <p class="game-flex__list-content">Дрель</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-2-7.png 1x, ./images/attributes-list-2-7@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-2-7.png"
+                                    srcset="./images/attributes-list-1-7.png 1x, ./images/attributes-list-1-7@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-2" class="js-choose" value="7">
+                        <p class="game-flex__counter">7</p>
+                        <p class="game-flex__list-content">Перчатки</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-2-8.png 1x, ./images/attributes-list-2-8@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-2-8.png"
+                                    srcset="./images/attributes-list-2-8.png 1x, ./images/attributes-list-2-8@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-2" class="js-choose" value="8">
+                        <p class="game-flex__counter">8</p>
+                        <p class="game-flex__list-content">Гаечный ключ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section attributes" data-type="Гибрид">
+        <div class="container game-flex">
+            <div class="game-flex__item game-flex__text-content">
+                <div class="game-flex__head">
+                    <picture>
+                        <source
+                                srcset="./images/attributes-3.png 1x, ./images/attributes-3@2x.png 2x"
+                        />
+                        <img
+                                src="./images/attributes-3.png"
+                                srcset="./images/attributes-3.png 1x, ./images/attributes-3@2x.png 2x"
+                                alt=""
+                                class="game-flex__text-absolute-bg"
+                        />
+                    </picture>
+                    <p class="game-flex__head-text">Собери<br/>рабочие<br/>атрибуты</p>
+                    <p class="game-flex__head-type game-flex__head-type_3">гибрид</p>
+                </div>
+                <div class="game-flex__footer">
+                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
+                            src="./images/home_icon.svg" alt="" width="24"></a>
+                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
+                       target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
+                    <button class="game-flex__footer-button js-next-button" disabled
+                            data-go-to="result[data-type='Гибрид']">Собрать атрибуты
+                    </button>
+
+                </div>
+            </div>
+            <div class="game-flex__item game-flex__list js-choose-list">
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-3-1.png 1x, ./images/attributes-list-3-1@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-3-1.png"
+                                    srcset="./images/attributes-list-3-1.png 1x, ./images/attributes-list-3-1@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-3" class="js-choose" value="1">
+                        <p class="game-flex__counter">1</p>
+                        <p class="game-flex__list-content">Ноутбук</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-3-2.png 1x, ./images/attributes-list-3-2@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-3-2.png"
+                                    srcset="./images/attributes-list-3-2.png 1x, ./images/attributes-list-3-2@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-3" class="js-choose" value="2">
+                        <p class="game-flex__counter">2</p>
+                        <p class="game-flex__list-content">Кофейная чашка</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-3-3.png 1x, ./images/attributes-list-3-3@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-3-3.png"
+                                    srcset="./images/attributes-list-3-3.png 1x, ./images/attributes-list-3-3@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-3" class="js-choose" value="3">
+                        <p class="game-flex__counter">3</p>
+                        <p class="game-flex__list-content">Ручки разных цветов</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-3-4.png 1x, ./images/attributes-list-3-4@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-3-4.png"
+                                    srcset="./images/attributes-list-3-4.png 1x, ./images/attributes-list-3-4@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-3" class="js-choose" value="4">
+                        <p class="game-flex__counter">4</p>
+                        <p class="game-flex__list-content">Телефон</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-3-5.png 1x, ./images/attributes-list-3-5@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-3-5.png"
+                                    srcset="./images/attributes-list-3-5.png 1x, ./images/attributes-list-3-5@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-3" class="js-choose" value="5">
+                        <p class="game-flex__counter">5</p>
+                        <p class="game-flex__list-content">Пижама</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-3-6.png 1x, ./images/attributes-list-3-6@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-3-6.png"
+                                    srcset="./images/attributes-list-3-6.png 1x, ./images/attributes-list-3-6@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-3" class="js-choose" value="6">
+                        <p class="game-flex__counter">6</p>
+                        <p class="game-flex__list-content">Зависть коллег из офиса</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-3-7.png 1x, ./images/attributes-list-3-7@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-3-7.png"
+                                    srcset="./images/attributes-list-3-7.png 1x, ./images/attributes-list-3-7@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-3" class="js-choose" value="7">
+                        <p class="game-flex__counter">7</p>
+                        <p class="game-flex__list-content">Кофе</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-3-8.png 1x, ./images/attributes-list-3-8@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-3-8.png"
+                                    srcset="./images/attributes-list-3-8.png 1x, ./images/attributes-list-3-8@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-3" class="js-choose" value="8">
+                        <p class="game-flex__counter">8</p>
+                        <p class="game-flex__list-content">Модное приложение для&nbsp;тайм-менеджмента</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section attributes" data-type="В пути">
+        <div class="container game-flex">
+            <div class="game-flex__item game-flex__text-content">
+                <div class="game-flex__head">
+                    <picture>
+                        <source
+                                srcset="./images/attributes-4.png 1x, ./images/attributes-4@2x.png 2x"
+                        />
+                        <img
+                                src="./images/attributes-4.png"
+                                srcset="./images/attributes-4.png 1x, ./images/attributes-4@2x.png 2x"
+                                alt=""
+                                class="game-flex__text-absolute-bg"
+                        />
+                    </picture>
+                    <p class="game-flex__head-text">Собери<br/>рабочие<br/>атрибуты</p>
+                    <p class="game-flex__head-type game-flex__head-type_4">в пути</p>
+                </div>
+                <div class="game-flex__footer">
+                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
+                            src="./images/home_icon.svg" alt="" width="24"></a>
+                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
+                       target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
+                    <button class="game-flex__footer-button js-next-button" disabled
+                            data-go-to="result[data-type='В пути']">Собрать атрибуты
+                    </button>
+
+                </div>
+            </div>
+            <div class="game-flex__item game-flex__list js-choose-list">
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-4-1.png 1x, ./images/attributes-list-4-1@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-4-1.png"
+                                    srcset="./images/attributes-list-4-1.png 1x, ./images/attributes-list-4-1@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-4" class="js-choose" value="1">
+                        <p class="game-flex__counter">1</p>
+                        <p class="game-flex__list-content">Ноутбук</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-4-2.png 1x, ./images/attributes-list-4-2@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-4-2.png"
+                                    srcset="./images/attributes-list-4-2.png 1x, ./images/attributes-list-4-2@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-4" class="js-choose" value="2">
+                        <p class="game-flex__counter">2</p>
+                        <p class="game-flex__list-content">Кофейная чашка</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-4-3.png 1x, ./images/attributes-list-4-3@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-4-3.png"
+                                    srcset="./images/attributes-list-4-3.png 1x, ./images/attributes-list-4-3@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-4" class="js-choose" value="3">
+                        <p class="game-flex__counter">3</p>
+                        <p class="game-flex__list-content">«Выключи кондиционер! Мне холодно»</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-4-4.png 1x, ./images/attributes-list-4-4@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-4-4.png"
+                                    srcset="./images/attributes-list-4-4.png 1x, ./images/attributes-list-4-4@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-4" class="js-choose" value="4">
+                        <p class="game-flex__counter">4</p>
+                        <p class="game-flex__list-content">Телефон</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-4-5.png 1x, ./images/attributes-list-4-5@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-4-5.png"
+                                    srcset="./images/attributes-list-4-5.png 1x, ./images/attributes-list-4-5@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-4" class="js-choose" value="5">
+                        <p class="game-flex__counter">5</p>
+                        <p class="game-flex__list-content">Очередной рабочий чатик</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-4-6.png 1x, ./images/attributes-list-4-6@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-4-6.png"
+                                    srcset="./images/attributes-list-4-6.png 1x, ./images/attributes-list-4-6@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-4" class="js-choose" value="6">
+                        <p class="game-flex__counter">6</p>
+                        <p class="game-flex__list-content">Флипчарт</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-4-7.png 1x, ./images/attributes-list-4-7@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-4-7.png"
+                                    srcset="./images/attributes-list-4-7.png 1x, ./images/attributes-list-4-7@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-4" class="js-choose" value="7">
+                        <p class="game-flex__counter">7</p>
+                        <p class="game-flex__list-content">Рубашка</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-4-8.png 1x, ./images/attributes-list-4-8@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-4-8.png"
+                                    srcset="./images/attributes-list-4-8.png 1x, ./images/attributes-list-4-8@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-4" class="js-choose" value="8">
+                        <p class="game-flex__counter">8</p>
+                        <p class="game-flex__list-content">Кто-то опять разогрел рыбу в&nbsp;микроволновке</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game__section attributes" data-type="На производстве">
+        <div class="container game-flex">
+            <div class="game-flex__item game-flex__text-content">
+                <div class="game-flex__head">
+                    <picture>
+                        <source
+                                srcset="./images/attributes-5.png 1x, ./images/attributes-5@2x.png 2x"
+                        />
+                        <img
+                                src="./images/attributes-5.png"
+                                srcset="./images/attributes-5.png 1x, ./images/attributes-5@2x.png 2x"
+                                alt=""
+                                class="game-flex__text-absolute-bg"
+                        />
+                    </picture>
+                    <p class="game-flex__head-text">Собери<br/>рабочие<br/>атрибуты</p>
+                    <p class="game-flex__head-type game-flex__head-type_5">на производстве</p>
+                </div>
+                <div class="game-flex__footer">
+                    <a class="game-flex__footer-link game-flex__footer-link_1 js-home-icon" href="#"><img
+                            src="./images/home_icon.svg" alt="" width="24"></a>
+                    <a class="game-flex__footer-link game-flex__footer-link_2" href="https://travel.rzd.ru/"
+                       target="_blank"><img src="./images/location_icon.svg" alt="" width="24"></a>
+                    <button class="game-flex__footer-button js-next-button" disabled
+                            data-go-to="result[data-type='На производстве']">Собрать атрибуты
+                    </button>
+
+                </div>
+            </div>
+            <div class="game-flex__item game-flex__list js-choose-list">
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-5-1.png 1x, ./images/attributes-list-5-1@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-5-1.png"
+                                    srcset="./images/attributes-list-5-1.png 1x, ./images/attributes-list-5-1@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-5" class="js-choose" value="1">
+                        <p class="game-flex__counter">1</p>
+                        <p class="game-flex__list-content">Ноутбук</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-5-2.png 1x, ./images/attributes-list-5-2@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-5-2.png"
+                                    srcset="./images/attributes-list-5-2.png 1x, ./images/attributes-list-5-2@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-5" class="js-choose" value="2">
+                        <p class="game-flex__counter">2</p>
+                        <p class="game-flex__list-content">Кофейная чашка</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-5-3.png 1x, ./images/attributes-list-5-3@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-5-3.png"
+                                    srcset="./images/attributes-list-5-3.png 1x, ./images/attributes-list-5-3@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-5" class="js-choose" value="3">
+                        <p class="game-flex__counter">3</p>
+                        <p class="game-flex__list-content">«Выключи кондиционер! Мне холодно»</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-5-4.png 1x, ./images/attributes-list-5-4@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-5-4.png"
+                                    srcset="./images/attributes-list-5-4.png 1x, ./images/attributes-list-5-4@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-5" class="js-choose" value="4">
+                        <p class="game-flex__counter">4</p>
+                        <p class="game-flex__list-content">Телефон</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-5-5.png 1x, ./images/attributes-list-5-5@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-5-5.png"
+                                    srcset="./images/attributes-list-5-5.png 1x, ./images/attributes-list-5-5@2x.png 2x"
+                                    alt=""
+                                    width="240"
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-5" class="js-choose" value="5">
+                        <p class="game-flex__counter">5</p>
+                        <p class="game-flex__list-content">Очередной рабочий чатик</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-5-6.png 1x, ./images/attributes-list-5-6@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-5-6.png"
+                                    srcset="./images/attributes-list-5-6.png 1x, ./images/attributes-list-5-6@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-5" class="js-choose" value="6">
+                        <p class="game-flex__counter">6</p>
+                        <p class="game-flex__list-content">Флипчарт</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-5-7.png 1x, ./images/attributes-list-5-7@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-5-7.png"
+                                    srcset="./images/attributes-list-5-7.png 1x, ./images/attributes-list-5-7@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-5" class="js-choose" value="7">
+                        <p class="game-flex__counter">7</p>
+                        <p class="game-flex__list-content">Рубашка</p>
+                    </div>
+                </div>
+                <div class="game-flex__list-item js-choose-item">
+                    <div class="game-flex__list-head">
+                        <picture>
+                            <source
+                                    srcset="./images/attributes-list-5-8.png 1x, ./images/attributes-list-5-8@2x.png 2x"
+                            />
+                            <img
+                                    src="./images/attributes-list-5-8.png"
+                                    srcset="./images/attributes-list-5-8.png 1x, ./images/attributes-list-5-8@2x.png 2x"
+                                    alt=""
+                                    width="240"
+
+                            />
+                        </picture>
+                    </div>
+                    <div class="game-flex__list-footer">
+                        <input type="checkbox" name="choose-attributes-5" class="js-choose" value="8">
+                        <p class="game-flex__counter">8</p>
+                        <p class="game-flex__list-content">Кто-то опять разогрел рыбу в&nbsp;микроволновке</p>
                     </div>
                 </div>
             </div>
