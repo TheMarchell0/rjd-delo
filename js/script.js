@@ -3,12 +3,16 @@ const mainBlock = document.querySelector('.game'),
     nextButtons = mainBlock.querySelectorAll('.js-next-button'),
     homeButtons = mainBlock.querySelectorAll('.js-home-icon'),
     typeBlocks = mainBlock.querySelectorAll('.js-type'),
-    chooseLists = mainBlock.querySelectorAll('.js-choose-list');
+    chooseLists = mainBlock.querySelectorAll('.js-choose-list'),
+    needScroll = window.innerWidth < 1400;
 
 let currentBlock = 'main',
     nextBlock = '';
 
 window.addEventListener('DOMContentLoaded', function () {
+    if (needScroll) {
+        scrollToTop();
+    }
 
     gsap.to(".main", {opacity: 1, duration: 1, zIndex: 10})
 
@@ -41,7 +45,30 @@ window.addEventListener('DOMContentLoaded', function () {
 
     for (let nextButton of nextButtons) {
         nextButton.addEventListener('click', () => {
+            if (needScroll) {
+                scrollToTop();
+            }
             nextBlock = nextButton.getAttribute('data-go-to');
+            changeSlide(currentBlock, nextBlock);
+            const hiddenBlock = currentBlock
+            setTimeout(() => gsap.to(`.${hiddenBlock}`, {left: '50%'}), 1500)
+            currentBlock = nextBlock;
+            validate(nextBlock);
+        })
+    }
+
+    function changeSlide(currentBlock, nextBlock) {
+        if (needScroll) {
+            gsap.to(`.${currentBlock}`, {opacity: 0, duration: 0.3, zIndex: 0, y: 20});
+            gsap.fromTo(`.${nextBlock}`, {opacity: 0, y:-20}, {
+                opacity: 1,
+                duration: 0.3,
+                zIndex: 10,
+                delay: 0.5,
+                y: 0,
+            });
+        }
+        else {
             gsap.to(`.${currentBlock}`, {left: '-50%', opacity: 0, duration: 1, zIndex: 0});
             gsap.fromTo(`.${nextBlock}`, {left: '150%', opacity: 0}, {
                 left: '50%',
@@ -49,11 +76,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 duration: 1,
                 zIndex: 10
             });
-            const hiddenBlock = currentBlock
-            setTimeout(() => gsap.to(`.${hiddenBlock}`, {left: '50%'}), 1500)
-            currentBlock = nextBlock;
-            validate(nextBlock);
-        })
+        }
     }
 
     function validate(currentBlock) {
@@ -72,8 +95,15 @@ window.addEventListener('DOMContentLoaded', function () {
 
     for (let homeButton of homeButtons) {
         homeButton.addEventListener('click', () => {
-            gsap.to(`.${currentBlock}`, {opacity: 0, duration: 1, zIndex: 0})
-            gsap.to(".main", {left: '50%', opacity: 1, duration: 1, zIndex: 10})
+            if (needScroll) {
+                scrollToTop()
+                gsap.to(`.${currentBlock}`, {opacity: 0, duration: 0.3, zIndex: 0, y: 20})
+                gsap.to(".main", {left: '50%', opacity: 1, duration: 0.3, zIndex: 10, delay: 0.5, y: -20});
+            }
+            else {
+                gsap.to(`.${currentBlock}`, {opacity: 0, duration: 1, zIndex: 0})
+                gsap.to(".main", {left: '50%', opacity: 1, duration: 1, zIndex: 10})
+            }
             const inputs = mainBlock.querySelectorAll('input:checked');
             for (let inputsItem of inputs) {
                 inputsItem.checked = false;
@@ -90,3 +120,26 @@ window.addEventListener('DOMContentLoaded', function () {
         })
     }
 });
+
+function scrollToTop() {
+    const duration = 500;
+    const start = window.scrollY;
+    const startTime = performance.now();
+
+    function animation(currentTime) {
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+
+        const easeInOutQuad = progress < 0.5
+            ? 2 * progress * progress
+            : -1 + (4 - 2 * progress) * progress;
+
+        window.scrollTo(0, start * (1 - easeInOutQuad));
+
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+        }
+    }
+
+    requestAnimationFrame(animation);
+}
