@@ -20,6 +20,7 @@ p {
 
 body {
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 .container {
@@ -31,8 +32,7 @@ body {
 
 
 .absolute-bg,
-.absolute-block,
-.game-flex__text-absolute-bg {
+.absolute-block {
     position: absolute;
     top: 0;
     left: 0;
@@ -46,9 +46,9 @@ body {
 
 .game__section {
     position: absolute;
-    top: 50%;
+    top: 24px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 100%;
     opacity: 0;
     padding: 0 24px;
@@ -59,11 +59,62 @@ body {
 }
 
 .game-flex__text-absolute-bg {
-    z-index: 1;
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    border-radius: 30px;
+    position: absolute;
+}
+
+.game-flex__text-absolute-bg-1 {
+    top: 159px;
+    right: -171px;
+}
+
+.game-flex__text-absolute-bg-2 {
+    top: 220px;
+    right: -186px;
+}
+
+.game-flex__text-absolute-bg-3 {
+    top: 240px;
+    right: -187px;
+}
+
+.game-flex__text-absolute-bg-4 {
+    top: 160px;
+    right: -185px;
+}
+
+.game-flex__text-absolute-bg-5 {
+    top: 133px;
+    right: -182px;
+}
+
+.game-flex__text-absolute-bg-6 {
+    top: 222px;
+    right: -184px;
+}
+
+.game-flex__text-absolute-bg-7 {
+    top: 220px;
+    right: -187px;
+}
+
+.game-flex__text-absolute-bg-8 {
+    top: 212px;
+    right: -188px;
+}
+
+.game-flex__text-absolute-bg-9 {
+    top: 222px;
+    right: -187px;
+}
+
+.game-flex__text-absolute-bg-10 {
+    top: 183px;
+    right: -185px;
+}
+
+.game-flex__text-absolute-bg-11 {
+    top: 198px;
+    right: -186px;
 }
 
 .main__container {
@@ -157,6 +208,9 @@ body {
 .game-flex__head {
     position: relative;
     height: 637px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .type .game-flex__head {
@@ -307,11 +361,12 @@ body {
 
 .game-flex__list-item {
     position: relative;
-    flex: 0 0 240px;
+    flex: 0 0 238px;
     border-radius: 30px;
     background: #FFF;
     height: 340px;
     transition: 0.1s linear;
+    overflow: hidden;
 }
 
 .game-flex__list-item.active {
@@ -323,12 +378,8 @@ body {
     padding: 24px 26px 24px 23px;
 }
 
-.type .game-flex__list-item:not(:last-child) {
+.type .game-flex__list-item:not(:last-child):not(:nth-child(2)) {
     margin-right: 16px;
-}
-
-.game-flex__list-item:not(:nth-child(4n)):not(:last-child) {
-    margin-right: 18px;
 }
 
 .type .game-flex__list-item:nth-child(-n+2) {
@@ -350,10 +401,6 @@ body {
     height: 180px;
 }
 
-.type .game-flex__list-item:nth-child(2) {
-    margin-right: 0;
-}
-
 .type .game-flex__list-item:not(:nth-child(-n+2)) img {
     transform: translateX(10px);
 }
@@ -366,10 +413,6 @@ body {
     margin-bottom: 15px;
 }
 
-.game-flex__list-item:nth-child(-n+4) {
-    margin-bottom: 14px;
-}
-
 .game-flex__list-item input {
     position: absolute;
     top: 0;
@@ -379,6 +422,10 @@ body {
     appearance: none;
     cursor: pointer;
     z-index: 10;
+}
+
+.type .game-flex__list-item:not(:last-child):not(:nth-child(2)) {
+    margin-right: 18px;
 }
 
 .game-flex__list-item input:checked + .game-flex__counter {
@@ -409,7 +456,32 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 9px;
+    margin: 0 auto 9px;
+}
+
+.powers[data-type="Офис"] .game-flex__list-head,
+.attributes[data-type="Офис"] .game-flex__list-head {
+    background: radial-gradient(0% 50% at 50% 50%, #FFFFFF 0%, #B9FF98 100%);
+}
+
+.powers[data-type="Свежий воздух"] .game-flex__list-head,
+.attributes[data-type="Свежий воздух"] .game-flex__list-head {
+    background: radial-gradient(0% 50% at 50% 50%, #FFFFFF 0%, #54C8E3 100%);
+}
+
+.powers[data-type="Гибрид"] .game-flex__list-head,
+.attributes[data-type="Гибрид"] .game-flex__list-head {
+    background: radial-gradient(0% 50% at 50% 50%, #FFFFFF 0%, #CA88FF 100%);
+}
+
+.powers[data-type="В пути"] .game-flex__list-head,
+.attributes[data-type="В пути"] .game-flex__list-head {
+    background: radial-gradient(0% 50% at 50% 50%, #FFFFFF 0%, #FF9960 100%);
+}
+
+.powers[data-type="На производстве"] .game-flex__list-head,
+.attributes[data-type="На производстве"] .game-flex__list-head {
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FF487F 100%);
 }
 
 .game-flex__list-footer {
@@ -542,7 +614,11 @@ body {
 }
 
 .result__content img {
-    flex: 0 0 664px;
+    object-fit: cover;
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    max-width: 664px;
 }
 
 .result__content-text {
@@ -660,7 +736,7 @@ body {
     }
 
     .type .game-flex__list-item {
-        flex: 0 0 13.4vw;
+        flex: 0 0 13.7vw;
     }
 
     .type .game-flex__list-item {
@@ -670,6 +746,34 @@ body {
     .game-flex__footer-button {
         font-size: 23px;
         padding: 13px 23px;
+    }
+
+    .result__content-text {
+        flex: 0 1 48.56vw;
+    }
+
+    .game-flex__list {
+        flex: 0 1 68vw;
+        padding: 47px 37px 59px;
+    }
+
+    .powers .game-flex__list-item,
+    .attributes .game-flex__list-item {
+        flex: 0 0 22%;
+    }
+
+    .game-flex__list-footer {
+        margin-top: 13px;
+        padding: 0 15px;
+    }
+
+}
+
+@media (min-width: 1421px) and (max-width: 1709px) {
+    .game-flex__list-content {
+        font-size: 10px;
+        line-height: 12.8px;
+        margin-left: initial;
     }
 }
 
@@ -761,32 +865,83 @@ body {
         margin-bottom: 60px;
     }
 
-    .game-flex__list {
-        justify-content: space-between;
-    }
-
-    .game-flex__list-footer {
-        margin-top: 13px;
-        padding: 0 15px;
-    }
-
-    .powers .game-flex__list-head img,
-    .attributes .game-flex__list-head img {
-        height: 227px;
-        object-fit: cover;
-        width: 100%;
-        border-radius: 30px;
-    }
-
-    .game-flex__list-head {
-        display: initial;
-    }
-
     .game-flex__list-content {
         margin: 0 auto;
+        font-size: 13px;
     }
 
     .game-flex__list-item {
         flex: 0 0 22%;
+    }
+
+    .result__content {
+        flex-direction: column;
+    }
+
+    .result__content img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .result__content-text {
+        margin-top: 40px;
+        margin-left: initial;
+        flex: 0 1 100%;
+    }
+
+
+    .result__socials-text {
+        max-width: 710px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .powers .game-flex__list-item:not(:nth-child(4n)):not(:last-child),
+    .attributes .game-flex__list-item:not(:nth-child(4n)):not(:last-child) {
+        margin-right: 18px;
+    }
+
+    .game-flex__list-item:nth-child(-n+4) {
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .main__title {
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    .powers .game-flex__list-head,
+    .attributes .game-flex__list-head  {
+        border-radius: 30px;
+    }
+
+    .type .game-flex__list-item:nth-child(-n+2) {
+        flex: 0 0 47%;
+    }
+
+    .type .game-flex__list-item {
+        flex: 0 0 31%;
+    }
+
+    .powers .game-flex__list-item,
+    .attributes .game-flex__list-item {
+        flex: 0 0 47%;
+    }
+
+    .powers .game-flex__list-item:nth-child(even),
+    .attributes .game-flex__list-item:nth-child(even) {
+        margin-right: 0!important;
+    }
+
+    .game-flex__list-item {
+        margin-bottom: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1701px) {
+    .game-flex__list {
+        justify-content: space-between;
     }
 }

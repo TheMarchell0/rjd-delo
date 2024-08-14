@@ -4,7 +4,7 @@ const mainBlock = document.querySelector('.game'),
     homeButtons = mainBlock.querySelectorAll('.js-home-icon'),
     typeBlocks = mainBlock.querySelectorAll('.js-type'),
     chooseLists = mainBlock.querySelectorAll('.js-choose-list'),
-    needScroll = window.innerWidth < 1400;
+    needScroll = window.innerWidth < 1420;
 
 let currentBlock = 'main',
     nextBlock = '';
@@ -51,7 +51,9 @@ window.addEventListener('DOMContentLoaded', function () {
             nextBlock = nextButton.getAttribute('data-go-to');
             changeSlide(currentBlock, nextBlock);
             const hiddenBlock = currentBlock
-            setTimeout(() => gsap.to(`.${hiddenBlock}`, {left: '50%'}), 1500)
+            setTimeout(() => {
+                gsap.to(`.${hiddenBlock}`, {left: '50%'})
+            }, 1500)
             currentBlock = nextBlock;
             validate(nextBlock);
         })
@@ -60,21 +62,20 @@ window.addEventListener('DOMContentLoaded', function () {
     function changeSlide(currentBlock, nextBlock) {
         if (needScroll) {
             gsap.to(`.${currentBlock}`, {opacity: 0, duration: 0.3, zIndex: 0, y: 20});
-            gsap.fromTo(`.${nextBlock}`, {opacity: 0, y:-20}, {
+            gsap.fromTo(`.${nextBlock}`, {opacity: 0, y: -20}, {
                 opacity: 1,
                 duration: 0.3,
                 zIndex: 10,
                 delay: 0.5,
                 y: 0,
             });
-        }
-        else {
+        } else {
             gsap.to(`.${currentBlock}`, {left: '-50%', opacity: 0, duration: 1, zIndex: 0});
             gsap.fromTo(`.${nextBlock}`, {left: '150%', opacity: 0}, {
                 left: '50%',
                 opacity: 1,
                 duration: 1,
-                zIndex: 10
+                zIndex: 10,
             });
         }
     }
@@ -99,8 +100,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 scrollToTop()
                 gsap.to(`.${currentBlock}`, {opacity: 0, duration: 0.3, zIndex: 0, y: 20})
                 gsap.to(".main", {left: '50%', opacity: 1, duration: 0.3, zIndex: 10, delay: 0.5, y: -20});
-            }
-            else {
+            } else {
                 gsap.to(`.${currentBlock}`, {opacity: 0, duration: 1, zIndex: 0})
                 gsap.to(".main", {left: '50%', opacity: 1, duration: 1, zIndex: 10})
             }
