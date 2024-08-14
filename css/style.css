@@ -382,6 +382,10 @@ body {
     padding: 24px 26px 24px 23px;
 }
 
+.game-flex__list-item-picture.mobile {
+    display: none;
+}
+
 .type .game-flex__list-item:nth-child(-n+2) {
     flex: 0 0 367px;
     min-height: 352px;
@@ -488,7 +492,7 @@ body {
 
 .powers[data-type="На производстве"] .game-flex__list-head,
 .attributes[data-type="На производстве"] .game-flex__list-head {
-    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, #FF487F 100%);
+    background: radial-gradient(0% 50% at 50% 50%, #FFFFFF 0%, #FF487F 100%);
 }
 
 .game-flex__list-footer {
@@ -1227,6 +1231,70 @@ body {
         right: -119px;
     }
 
+    .powers .game-flex__list-head, .attributes .game-flex__list-head,
+    .game-flex__list-item {
+        border-radius: 24px;
+    }
+
+    .powers .game-flex__counter,
+    .attributes .game-flex__counter {
+        top: 11px;
+        left: 11px;
+    }
+
+    .powers .game-flex__list-head,
+    .attributes .game-flex__list-head,
+    .powers .game-flex__list-head img,
+    .attributes .game-flex__list-head img {
+        height: 150px;
+        min-height: auto;
+    }
+
+    .powers .game-flex__list-content,
+    .attributes .game-flex__list-content{
+         margin: initial;
+    }
+
+    .powers .game-flex__list-head img,
+    .attributes .game-flex__list-head img {
+        width: 150px;
+    }
+
+    .powers .game-flex__list-content,
+    .attributes .game-flex__list-content {
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 10.8px;
+        min-height: auto;
+    }
+
+    .powers .game-flex__list-footer,
+    .attributes .game-flex__list-footer {
+        display: flex;
+        padding: 0 5px 0 8px;
+        justify-content: center;
+        min-height: 47px;
+    }
+
+    .powers .game-flex__list-item,
+    .attributes .game-flex__list-item {
+        height: 213px;
+    }
+
+    .powers[data-type='На производстве'] .game-flex__list-item,
+    .attributes[data-type='На производстве'] .game-flex__list-item{
+        border: 1px solid white;
+    }
+
+    .game-flex__list-item-picture.desktop {
+        display: none;
+    }
+
+    .game-flex__list-item-picture.mobile {
+        display: block;
+    }
+
+
     .result__wrapper {
         border-radius: 24px;
         padding: 8px;
@@ -1309,5 +1377,20 @@ body {
 
     .type .game-flex__list-head-picture.mobile img {
         width: 54px;
+    }
+
+    .powers .game-flex__list-content,
+    .attributes .game-flex__list-content {
+        font-size: 6px;
+        line-height: 7.8px;
+    }
+
+    .powers .game-flex__list-head,
+    .attributes .game-flex__list-head {
+        border-radius: 0px;
+    }
+
+    .result__socials-link {
+        margin-left: 0;
     }
 }
