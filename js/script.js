@@ -1,5 +1,5 @@
 const mainBlock = document.querySelector('.game'),
-    typeButton = mainBlock.querySelector('.js-type-button'),
+    typeButtons = mainBlock.querySelectorAll('.js-type-button'),
     nextButtons = mainBlock.querySelectorAll('.js-next-button'),
     homeButtons = mainBlock.querySelectorAll('.js-home-icon'),
     typeBlocks = mainBlock.querySelectorAll('.js-type'),
@@ -39,7 +39,9 @@ window.addEventListener('DOMContentLoaded', function () {
 
     for (let typeBlock of typeBlocks) {
         typeBlock.addEventListener('click', () => {
-            typeButton.setAttribute('data-go-to', typeBlock.value);
+            for (let typeButton of typeButtons) {
+                typeButton.setAttribute('data-go-to', typeBlock.value);
+            }
         })
     }
 
