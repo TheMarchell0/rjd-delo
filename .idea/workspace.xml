@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af6b5d25-6111-4945-a2ee-bba0fb867fc0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/images/powers-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/powers-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/powers-3@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/powers-3@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/powers-4.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/powers-4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/powers-4@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/powers-4@2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/powers-5.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/powers-5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/powers-5@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/powers-5@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/rjd-delo-script-original.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,17 +25,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Work/rjd-delo&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propDebugger&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/SashaWork/rjd-delo",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propDebugger",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SashaWork\rjd-delo\js" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,6 +57,11 @@
       <workItem from="1723677599316" duration="642000" />
       <workItem from="1723680325277" duration="3659000" />
       <workItem from="1723687484242" duration="111000" />
+      <workItem from="1725323154210" duration="41000" />
+      <workItem from="1725357342810" duration="6947000" />
+      <workItem from="1725375079295" duration="4687000" />
+      <workItem from="1725430579864" duration="109000" />
+      <workItem from="1725435624512" duration="4303000" />
     </task>
     <servers />
   </component>
