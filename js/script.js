@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
         if (result) {
             const resultBlock = document.querySelector(`#${result}`)
-            const shareResult = resultBlock.querySelector('.js-copy-icon');
+            const shareResult = resultBlock.querySelector('.copy-link');
             shareResult.classList.add('disable');
             gsap.to(resultBlock, {display: 'block'})
             gsap.to(resultBlock, {opacity: 1, duration: 1, zIndex: 10, delay: 0.5})
@@ -77,9 +77,9 @@ window.addEventListener('DOMContentLoaded', function () {
                     const currentUrl = window.location.href;
                     const newUrl = `${currentUrl}?=type:${id}`;
                     window.history.pushState({}, '', newUrl);
-                    var myShare = element.querySelector('.js-copy-icon');
+                    const myShare = element.querySelector('.js-copy-icon');
 
-                    var share = Ya.share2(myShare, {
+                    const share = Ya.share2(myShare, {
                         content: {
                             url: newUrl,
                         },

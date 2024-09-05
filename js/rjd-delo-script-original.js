@@ -76,9 +76,21 @@ window.addEventListener('DOMContentLoaded', function () {
                     const id = element.id;
                     const currentUrl = window.location.href;
                     const newUrl = `${currentUrl}?=type:${id}`;
-                    const yandexShare = element.querySelector('.ya-share2');
                     window.history.pushState({}, '', newUrl);
-                    yandexShare.setAttribute('data-url', newUrl)
+                    const myShare = element.querySelector('.js-copy-icon');
+
+                    const share = Ya.share2(myShare, {
+                        content: {
+                            url: newUrl,
+                        },
+                        theme: {
+                            colorScheme: 'whiteblack',
+                            shape: 'round',
+                            limit: 0,
+                            moreButtonType: "short",
+                            services: "vkontakte,telegram,whatsapp"
+                        }
+                    });
                 }
             }
             changeSlide(currentBlock, nextBlock);
