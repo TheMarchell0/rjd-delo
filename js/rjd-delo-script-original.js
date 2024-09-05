@@ -76,7 +76,9 @@ window.addEventListener('DOMContentLoaded', function () {
                     const id = element.id;
                     const currentUrl = window.location.href;
                     const newUrl = `${currentUrl}?=type:${id}`;
-                    window.history.pushState({}, '', newUrl); // обновляет URL без перезагрузки страницы
+                    const yandexShare = element.querySelector('.ya-share2');
+                    window.history.pushState({}, '', newUrl);
+                    yandexShare.setAttribute('data-url', newUrl)
                 }
             }
             changeSlide(currentBlock, nextBlock);
