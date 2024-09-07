@@ -84,7 +84,7 @@ window.addEventListener('DOMContentLoaded', function () {
                             url: newUrl,
                         },
                         theme: {
-                            curtain: true,
+                            curtain: false,
                             colorScheme: 'whiteblack',
                             shape: 'round',
                             limit: 0,
