@@ -88,7 +88,7 @@ window.addEventListener('DOMContentLoaded', function () {
                             shape: 'round',
                             limit: 0,
                             moreButtonType: "short",
-                            services: "vkontakte,telegram,whatsapp"
+                            services: "vkontakte,telegram,whatsapp",
                         }
                     });
                 }
