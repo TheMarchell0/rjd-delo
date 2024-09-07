@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
         if (result) {
             const resultBlock = document.querySelector(`#${result}`)
-            const shareResult = resultBlock.querySelector('.js-copy-icon');
+            const shareResult = resultBlock.querySelector('.copy-link');
             shareResult.classList.add('disable');
             gsap.to(resultBlock, {display: 'block'})
             gsap.to(resultBlock, {opacity: 1, duration: 1, zIndex: 10, delay: 0.5})
@@ -84,11 +84,12 @@ window.addEventListener('DOMContentLoaded', function () {
                             url: newUrl,
                         },
                         theme: {
+                            curtain: true,
                             colorScheme: 'whiteblack',
                             shape: 'round',
                             limit: 0,
                             moreButtonType: "short",
-                            services: "vkontakte,telegram,whatsapp"
+                            services: "vkontakte,telegram,whatsapp",
                         }
                     });
                 }
